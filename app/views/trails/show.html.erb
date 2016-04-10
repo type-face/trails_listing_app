@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>City:</strong>
+  <%= @trail.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @trail.state %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @trail.country %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @trail.name %>
+</p>
+
+<p>
+  <strong>Unique:</strong>
+  <%= @trail.unique_id %>
+</p>
+
+<p>
+  <strong>Directions:</strong>
+  <%= @trail.directions %>
+</p>
+
+<p>
+  <strong>Lat:</strong>
+  <%= @trail.lat %>
+</p>
+
+<p>
+  <strong>Lon:</strong>
+  <%= @trail.lon %>
+</p>
+
+<p>
+  <strong>Activity:</strong>
+  <%= @trail.activity %>
+</p>
+
+<%= link_to 'Edit', edit_trail_path(@trail) %> |
+<%= link_to 'Back', trails_path %>
