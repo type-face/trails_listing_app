@@ -14,8 +14,10 @@
  *= require_self
  */
 
+//= depend_on_asset "forest.jpg"
+
  .container { 
-  background: url(forest.jpg) no-repeat center center fixed; 
+  background: url('<%= asset_path("forest.jpg")%>') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
