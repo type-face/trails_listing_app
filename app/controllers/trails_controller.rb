@@ -7,7 +7,7 @@ class TrailsController < ApplicationController
   # GET /trails
   # GET /trails.json
   def index
-    response = trails_api_request.body.symbolize_keys!
+    response = trail_api_request.body.symbolize_keys!
 
     response[:places].each do |trail|
       trail.symbolize_keys!
@@ -59,7 +59,7 @@ class TrailsController < ApplicationController
       params.require(:trail).permit(:city, :state, :country, :name, :unique_id, :directions, :lat, :lon, :activity_id)
     end
 
-    def trails_api_request
+    def trail_api_request
       Unirest.get "https://trailapi-trailapi.p.mashape.com/?limit=25&q[city_cont]=Vancouver&q[country_cont]=Canada",
             headers:{
               "X-Mashape-Key" => Rails.application.secrets.x_mashape_key,

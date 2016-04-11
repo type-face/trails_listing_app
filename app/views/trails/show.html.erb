@@ -1,23 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>City:</strong>
-  <%= @trail.city %>
-</p>
-
-<p>
-  <strong>State:</strong>
-  <%= @trail.state %>
-</p>
-
-<p>
-  <strong>Country:</strong>
-  <%= @trail.country %>
-</p>
-
-<p>
   <strong>Name:</strong>
   <%= @trail.name %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @trail.city %>
 </p>
 
 <p>
@@ -36,11 +26,16 @@
 </p>
 
 <p>
-  <strong>Activity:</strong>
+  <strong><%= 'Activity'.pluralize(@trail.activities.size) + ":" %></strong>
     <% @trail.activities.each do |activity| %>
       <div>
-        <%= activity.activity_type_name %>
+        <%= activity.activity_type_name.titleize %>
+        <%= "- #{activity.length} miles" unless activity.length.zero? %>
+        <%= "- Rating: #{activity.rating}" unless activity.rating.zero? %>
+        <br>
+        <%= link_to activity.url, activity.url%>
       </div>
+      <br>
     <% end %>
 </p>
 
