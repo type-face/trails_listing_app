@@ -1,26 +1,27 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Trails</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>City</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @trails.each do |trail| %>
-      <tr>
-        <td><%= trail.name %></td>
-        <td><%= trail.city %></td>
-        <td><%= link_to 'Show', trail_path(trail) %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
+<div class='row'>
+  <div class='col-sm-offset-2 col-sm-7'>
+    <div class='panel panel-default'>
+      <div class='panel-heading'>
+        <h1>British Columbia Trails</h1>
+      </div>
+        <table class='table'>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>City</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @trails.each do |trail| %>
+              <tr>
+                <td><%= link_to trail.name, trail_path(trail) %></td>
+                <td><%= trail.city %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+    </div>
+  </div>
+</div>
