@@ -22,7 +22,7 @@ class Trail < ActiveRecord::Base
 
       if new_trail.valid?
         new_trail.save
-        Rails.logger.info "#{Time.now}: NEW #{self.class.upcase}, id: new_trail.id"
+        Rails.logger.info "#{Time.now}: NEW #{self.class}, id: new_trail.id"
         
         trail[:activities].each do |activity|
           activity.symbolize_keys!
