@@ -29,14 +29,16 @@ class TrailsController < ApplicationController
     end
 
     def trail_api_request
-      # Rails.cache.delete('trails_cache')
-      Rails.cache.fetch('trails_cache', expires_in: 7.days) do
+      Rails.logger.info "#{Time.now} TRAIL API REQUEST"
+      response = Rails.cache.fetch('trails_cache', expires_in: 7.days) do
         Unirest.get "https://trailapi-trailapi.p.mashape.com/?limit=100&q[state_cont]=British+Columbia&q[country_cont]=Canada",
             headers:{
               "X-Mashape-Key" => Rails.application.secrets.x_mashape_key,
               "Accept" => "application/json"
             }
       end
+
+      return response
     end
 
 end

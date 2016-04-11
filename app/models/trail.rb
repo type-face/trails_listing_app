@@ -5,6 +5,7 @@ class Trail < ActiveRecord::Base
   has_many :activities
 
   def self.create_from_api_response(response)
+    Rails.logger.info "#{Time.now} #{__FILE__} #{__method__}"
     response_body = response.body.symbolize_keys!
     response_body[:places].each do |trail|
       trail.symbolize_keys!
@@ -21,7 +22,8 @@ class Trail < ActiveRecord::Base
 
       if new_trail.valid?
         new_trail.save
-
+        Rails.logger.info "#{Time.now}: NEW #{self.class.upcase}, id: new_trail.id"
+        
         trail[:activities].each do |activity|
           activity.symbolize_keys!
           Activity.create(name:                 activity[:name],
