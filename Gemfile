@@ -36,7 +36,10 @@ gem "less-rails"
 gem "twitter-bootstrap-rails"
 
 gem 'unirest'
+
 gem 'htmlentities'
+
+gem 'figaro'
 
 group :production do
   gem 'pg'
