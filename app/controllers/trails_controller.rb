@@ -7,6 +7,7 @@ class TrailsController < ApplicationController
   # GET /trails
   # GET /trails.json
   def index
+    # TODO: cache API request: https://robots.thoughtbot.com/caching-api-requests
     response = trail_api_request.body.symbolize_keys!
 
     response[:places].each do |trail|
@@ -40,7 +41,7 @@ class TrailsController < ApplicationController
       end
     end
 
-    @trails = Trail.all
+    @trails = Trail.order(:city).order(:name)
   end
 
   # GET /trails/1
@@ -60,11 +61,13 @@ class TrailsController < ApplicationController
     end
 
     def trail_api_request
-      Unirest.get "https://trailapi-trailapi.p.mashape.com/?limit=25&q[city_cont]=Vancouver&q[country_cont]=Canada",
+      Rails.cache.fetch("trails_cache", expires_in: 7.days) do
+        Unirest.get "https://trailapi-trailapi.p.mashape.com/?limit=100&q[state_cont]=British+Columbia&q[country_cont]=Canada",
             headers:{
               "X-Mashape-Key" => Rails.application.secrets.x_mashape_key,
               "Accept" => "application/json"
             }
+      end
     end
 
 end

@@ -5,11 +5,8 @@
 <table>
   <thead>
     <tr>
-      <th>City</th>
-      <th>State</th>
-      <th>Country</th>
       <th>Name</th>
-      <th>Directions</th>
+      <th>City</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -17,11 +14,8 @@
   <tbody>
     <% @trails.each do |trail| %>
       <tr>
-        <td><%= trail.city %></td>
-        <td><%= trail.state %></td>
-        <td><%= trail.country %></td>
         <td><%= trail.name %></td>
-        <td><%= trail.directions %></td>
+        <td><%= trail.city %></td>
         <td><%= link_to 'Show', trail_path(trail) %></td>
       </tr>
     <% end %>

@@ -16,21 +16,11 @@
 </p>
 
 <p>
-  <strong>Lat:</strong>
-  <%= @trail.lat %>
-</p>
-
-<p>
-  <strong>Lon:</strong>
-  <%= @trail.lon %>
-</p>
-
-<p>
   <strong><%= 'Activity'.pluralize(@trail.activities.size) + ":" %></strong>
     <% @trail.activities.each do |activity| %>
       <div>
         <%= activity.activity_type_name.titleize %>
-        <%= "- #{activity.length} miles" unless activity.length.zero? %>
+        <%= "- Trail distance: #{activity.length} miles" unless activity.length.zero? %>
         <%= "- Rating: #{activity.rating}" unless activity.rating.zero? %>
         <br>
         <%= link_to activity.url, activity.url%>
@@ -38,5 +28,9 @@
       <br>
     <% end %>
 </p>
+
+<div>
+  <%= image_tag "https://maps.googleapis.com/maps/api/staticmap?center=#{@trail.lat},#{@trail.lon}&markers=color :blue|#{@trail.lat},#{@trail.lon}&zoom=11&size=400x400&key=#{Rails.application.secrets.google_map_api_key}" %>
+</div>
 
 <%= link_to 'Back', trails_path %>
