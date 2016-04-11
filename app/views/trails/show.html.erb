@@ -1,37 +1,42 @@
-<p id="notice"><%= notice %></p>
+<div class='row'>
+  <div class='col-sm-offset-2 col-sm-7'>
+    <div class='panel panel-default'>
+      <div class='panel-heading'>
+        <h3><%= @trail.name %></h3>
+      </div>
+      <ul class='list-group'>
+        <li class='list-group-item'>
+          <strong>City:</strong>
+          <%= @trail.city %>
+        </li>
+        <li class='list-group-item'>
+          <strong>Directions:</strong>
+          <%= @trail.directions %>
+        </li>
+        <% if @trail.activities.present? %>
+          <li class='list-group-item'>
+            <strong><%= 'Activity'.pluralize(@trail.activities.size) + ":" %></strong>
+              <ul class='list-view'>
+                <% @trail.activities.each do |activity| %>
+                  <li class='list-group-item'>
+                    <%= link_to activity.activity_type_name.titleize, activity.url %>
+                    <%= "- Trail distance: #{activity.length} miles" unless activity.length.zero? %>
+                    <%= "- Rating: #{activity.rating}" unless activity.rating.zero? %>
+                  </li>
+                <% end %>
+              </ul>
+          </li>
+        <% end %>
 
-<p>
-  <strong>Name:</strong>
-  <%= @trail.name %>
-</p>
-
-<p>
-  <strong>City:</strong>
-  <%= @trail.city %>
-</p>
-
-<p>
-  <strong>Directions:</strong>
-  <%= @trail.directions %>
-</p>
-
-<% if @trail.activities.present? %>
-  <p>
-    <strong><%= 'Activity'.pluralize(@trail.activities.size) + ":" %></strong>
-      <% @trail.activities.each do |activity| %>
-        <div>
-          <%= link_to activity.activity_type_name.titleize, activity.url %>
-          <%= "- Trail distance: #{activity.length} miles" unless activity.length.zero? %>
-          <%= "- Rating: #{activity.rating}" unless activity.rating.zero? %>
-          <br>
-        </div>
-        <br>
-      <% end %>
-  </p>
-<% end %>
-
-<div>
-  <%= image_tag "https://maps.googleapis.com/maps/api/staticmap?center=#{@trail.lat},#{@trail.lon}&markers=|#{@trail.lat},#{@trail.lon}&zoom=10&size=400x400&maptype=terrain&key=#{Rails.application.secrets.google_map_api_key}", size: 400 %>
+        <li class='list-group-item'>
+          <%= image_tag "https://maps.googleapis.com/maps/api/staticmap?center=#{@trail.lat},#{@trail.lon}&markers=|#{@trail.lat},#{@trail.lon}&zoom=10&size=400x400&maptype=terrain&key=#{Rails.application.secrets.google_map_api_key}", size: 400, class: 'map' %>
+        </li>
+        <li class='list-group-item'>
+          <%= link_to 'Back', trails_path, class: 'btn  btn-default', style: 'text-decoration: none' %>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 
-<%= link_to 'Back', trails_path %>
+
