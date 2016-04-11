@@ -21,11 +21,6 @@
 </p>
 
 <p>
-  <strong>Unique:</strong>
-  <%= @trail.unique_id %>
-</p>
-
-<p>
   <strong>Directions:</strong>
   <%= @trail.directions %>
 </p>
@@ -42,8 +37,11 @@
 
 <p>
   <strong>Activity:</strong>
-  <%= @trail.activity %>
+    <% @trail.activities.each do |activity| %>
+      <div>
+        <%= activity.activity_type_name %>
+      </div>
+    <% end %>
 </p>
 
-<%= link_to 'Edit', edit_trail_path(@trail) %> |
 <%= link_to 'Back', trails_path %>

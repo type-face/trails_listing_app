@@ -1,64 +1,51 @@
 class TrailsController < ApplicationController
-  before_action :set_trail, only: [:show, :edit, :update, :destroy]
+  require 'unirest'
+  require 'htmlentities'
+
+  before_action :set_trail, only: [:show]
 
   # GET /trails
   # GET /trails.json
   def index
+    response = trails_api_request.body.symbolize_keys!
+
+    response[:places].each do |trail|
+      trail.symbolize_keys!
+      decoder = HTMLEntities.new
+      new_trail = Trail.new(city:       trail[:city], 
+                            state:      trail[:state],
+                            country:    trail[:country],
+                            name:       decoder.decode(trail[:name]),
+                            unique_id:  trail[:unique_id],
+                            directions: decoder.decode(trail[:directions]),
+                            lat:        trail[:lat],
+                            lon:        trail[:lon]
+                            )
+
+      if new_trail.valid?
+        new_trail.save
+
+        trail[:activities].each do |activity|
+          activity.symbolize_keys!
+          Activity.create(name:                 activity[:name],
+                          unique_id:            activity[:unique_id],
+                          trail_id:             new_trail.id,
+                          activity_type_name:   activity[:activity_type_name],
+                          url:                  activity[:url],
+                          description:          activity[:description],
+                          length:               activity[:length],
+                          rating:               activity[:rating]
+                          )
+        end unless trail[:activities].empty?
+      end
+    end
+
     @trails = Trail.all
   end
 
   # GET /trails/1
   # GET /trails/1.json
   def show
-  end
-
-  # GET /trails/new
-  def new
-    @trail = Trail.new
-  end
-
-  # GET /trails/1/edit
-  def edit
-  end
-
-  # POST /trails
-  # POST /trails.json
-  def create
-    @trail = Trail.new(trail_params)
-
-    respond_to do |format|
-      if @trail.save
-        format.html { redirect_to @trail, notice: 'Trail was successfully created.' }
-        format.json { render :show, status: :created, location: @trail }
-      else
-        format.html { render :new }
-        format.json { render json: @trail.errors, status: :unprocessable_entity }
-      end
-    end
-  end
-
-  # PATCH/PUT /trails/1
-  # PATCH/PUT /trails/1.json
-  def update
-    respond_to do |format|
-      if @trail.update(trail_params)
-        format.html { redirect_to @trail, notice: 'Trail was successfully updated.' }
-        format.json { render :show, status: :ok, location: @trail }
-      else
-        format.html { render :edit }
-        format.json { render json: @trail.errors, status: :unprocessable_entity }
-      end
-    end
-  end
-
-  # DELETE /trails/1
-  # DELETE /trails/1.json
-  def destroy
-    @trail.destroy
-    respond_to do |format|
-      format.html { redirect_to trails_url, notice: 'Trail was successfully destroyed.' }
-      format.json { head :no_content }
-    end
   end
 
   private
@@ -71,4 +58,13 @@ class TrailsController < ApplicationController
     def trail_params
       params.require(:trail).permit(:city, :state, :country, :name, :unique_id, :directions, :lat, :lon, :activity_id)
     end
+
+    def trails_api_request
+      Unirest.get "https://trailapi-trailapi.p.mashape.com/?limit=25&q[city_cont]=Vancouver&q[country_cont]=Canada",
+            headers:{
+              "X-Mashape-Key" => Rails.application.secrets.x_mashape_key,
+              "Accept" => "application/json"
+            }
+    end
+
 end

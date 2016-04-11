@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :trails
+  root 'trails#index', to: 'trails/index', as: 'trails'
+  get 'trails/:id', to: 'trails#show', as: 'trail'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
