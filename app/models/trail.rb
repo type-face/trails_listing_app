@@ -21,21 +21,8 @@ class Trail < ActiveRecord::Base
                             )
 
       if new_trail.valid?
-        new_trail.save
-        Rails.logger.info "#{Time.now}: NEW #{self.class}, id: new_trail.id"
-        
-        trail[:activities].each do |activity|
-          activity.symbolize_keys!
-          Activity.create(name:                 activity[:name],
-                          unique_id:            activity[:unique_id],
-                          trail_id:             new_trail.id,
-                          activity_type_name:   activity[:activity_type_name],
-                          url:                  activity[:url],
-                          description:          activity[:description],
-                          length:               activity[:length],
-                          rating:               activity[:rating]
-                          )
-        end unless trail[:activities].empty?
+        Rails.logger.info "#{Time.now}: NEW TRAIL - id: #{new_trail.id}" if new_trail.save 
+        Activity.create_activities_from_json(trail[:activities], new_trail.id) unless trail[:activities].empty?
       end
     end
   end
