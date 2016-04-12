@@ -29,7 +29,9 @@
         <% end %>
 
         <li class='list-group-item'>
-          <%= image_tag "https://maps.googleapis.com/maps/api/staticmap?center=#{@trail.lat},#{@trail.lon}&markers=|#{@trail.lat},#{@trail.lon}&zoom=10&size=400x400&maptype=terrain&key=#{Rails.application.secrets.google_map_api_key}", size: 400, class: 'map' %>
+          <% cache do %>
+            <%= image_tag "https://maps.googleapis.com/maps/api/staticmap?center=#{@trail.lat},#{@trail.lon}&markers=|#{@trail.lat},#{@trail.lon}&zoom=10&size=400x400&maptype=terrain&key=#{Rails.application.secrets.google_map_api_key}", size: 400, class: 'map' %>
+          <% end %>
         </li>
         <li class='list-group-item'>
           <%= link_to 'Back', trails_path, class: 'btn  btn-default', style: 'text-decoration: none' %>
