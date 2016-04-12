@@ -1,7 +1,4 @@
 class TrailsController < ApplicationController
-  require 'unirest'
-  require 'htmlentities'
-
   before_action :set_trail, only: [:show]
 
   # GET /trails
