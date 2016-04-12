@@ -4,8 +4,7 @@ class TrailsController < ApplicationController
   # GET /trails
   # GET /trails.json
   def index
-    response = trail_api_request
-    Trail.create_from_api_response(response) if response.code == 200
+    trail_api_request
     @trails = Trail.order(:city).order(:name)
   end
 
@@ -26,16 +25,15 @@ class TrailsController < ApplicationController
     end
 
     def trail_api_request
-      response = Rails.cache.fetch('trails_cache', expires_in: 7.days) do
-      Rails.logger.info "#{Time.now} TRAIL API REQUEST"
-        Unirest.get "https://trailapi-trailapi.p.mashape.com/?limit=500&q[state_cont]=British+Columbia&q[country_cont]=Canada",
+      Rails.cache.fetch('trails_cache', expires_in: 7.days) do
+        Rails.logger.info "#{Time.now} TRAIL API REQUEST"
+        response = Unirest.get "https://trailapi-trailapi.p.mashape.com/?limit=500&q[state_cont]=British+Columbia&q[country_cont]=Canada",
             headers:{
               "X-Mashape-Key" => Rails.application.secrets.x_mashape_key,
               "Accept" => "application/json"
             }
+        Trail.create_from_api_response(response) if response.code == 200
       end
-
-      return response
     end
 
 end
