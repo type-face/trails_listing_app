@@ -8,8 +8,8 @@ class ActiveSupport::TestCase
 
   # Add more helper methods to be used by all tests here...
   VCR.configure do |c|
-    c.cassette_library_dir = 'vcr_cassettes'
+    c.cassette_library_dir = 'test/vcr_cassettes'
     c.hook_into :webmock
   end
-  
+
 end
