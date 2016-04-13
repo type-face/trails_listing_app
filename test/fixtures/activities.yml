@@ -1,1 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  activity_type_name: canoeing
+  unique_id: 1
+  trail: Caddy Lake
+  length: 8
+
+two: 
+  activity_type_name: hiking
+  unique_id: 2
+  trail: Caddy Lake
+  length: 5

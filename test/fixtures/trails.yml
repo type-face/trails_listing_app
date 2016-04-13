@@ -1,1 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+caddy_lake:
+  city: Winnipeg
+  state: Manitoba
+  country: Canada
+  name: Caddy Lake
+  unique_id: 1
+  directions: Turn left off Hwy 1 before West Hawk Lake
+  lat: 49.893332 
+  lon: -97.142216
