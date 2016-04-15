@@ -7,6 +7,8 @@
 # Ignore bundler config.
 /.bundle
 
+/.byebug_history
+
 /test/vcr_cassettes
 
 # Ignore the default SQLite database.
