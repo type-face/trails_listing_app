@@ -7,7 +7,7 @@ class TrailsControllerTest < ActionController::TestCase
   end
 
   test "should create Trails from API data" do
-    VCR.use_cassette("trails_api_call") do
+    VCR.use_cassette("trails_api_call", match_requests_on: [:method, VCR.request_matchers.uri_without_param(:limit)]) do
       assert_difference('Trail.count', 50) do
         get :index
       end
