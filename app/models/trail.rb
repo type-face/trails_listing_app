@@ -1,9 +1,10 @@
 class Trail < ActiveRecord::Base
+
   validates :unique_id, uniqueness: true
 
-  has_many :activities
+  has_many :activities, dependent: :destroy
 
-  def self.create_from_api_response(response)
+  def self.update_trails_from_api_response(response)
     Rails.logger.info "#{Time.now} #{__FILE__} #{__method__}"
     existing_trails = Trail.all.pluck(:unique_id)
     
@@ -27,12 +28,13 @@ class Trail < ActiveRecord::Base
                                       lat:        trail_json[:lat],
                                       lon:        trail_json[:lon]
                                       )
-      trail_saved = trail_to_update.save
-      if trail_saved
-        Rails.logger.info "#{Time.now}: NEW TRAIL - id: #{trail_to_update.id}"  
-        Activity.update_or_create_activities_from_json(trail_json[:activities], trail_to_update.id) unless trail_json[:activities].empty?
-      end
 
-    return trail_saved
+      is_new_record = trail_to_update.new_record?
+      self.transaction do
+        if trail_to_update.save!
+          Rails.logger.info "#{Time.now}: #{is_new_record ? 'NEW' : 'UPDATED' } TRAIL - id: #{trail_to_update.id}"  
+          Activity.update_or_create_activities_from_json(trail_json[:activities], trail_to_update) unless trail_json[:activities].empty?
+        end
+      end
   end
 end

@@ -32,7 +32,7 @@ class TrailsController < ApplicationController
               "X-Mashape-Key" => Rails.application.secrets.x_mashape_key,
               "Accept" => "application/json"
             }
-        Trail.create_from_api_response(response) if response.code == 200
+        Trail.update_trails_from_api_response(response) if response.code == 200
       end
     end
 

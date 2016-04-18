@@ -1,12 +1,13 @@
 class Activity < ActiveRecord::Base
   belongs_to :trail
 
-  def self.update_or_create_activities_from_json(activities_json, parent_id, activity_to_update = Activity.new)
+  def self.update_or_create_activities_from_json(activities_json, trail)
     activities_json.each do |activity|
       activity.symbolize_keys!
+      activity_to_update = Activity.find_or_create_by!(unique_id: activity[:unique_id])
+
       activity_to_update.assign_attributes(name:                  activity[:name],
-                                            unique_id:            activity[:unique_id],
-                                            trail_id:             parent_id,
+                                            trail_id:             trail.id,
                                             activity_type_name:   activity[:activity_type_name],
                                             url:                  activity[:url],
                                             description:          activity[:description],
@@ -14,7 +15,9 @@ class Activity < ActiveRecord::Base
                                             rating:               activity[:rating]
                                             )
 
-      Rails.logger.info "#{Time.now}: NEW ACTIVITY - id: #{activity_to_update.id}" if activity_to_update.save 
+      if activity_to_update.changed? && activity_to_update.save!
+        Rails.logger.info "#{Time.now}: MODIFIED ACTIVITY - id: #{activity_to_update.id}" 
+      end
     end
   end
 end
