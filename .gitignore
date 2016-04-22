@@ -9,7 +9,6 @@
 
 /.byebug_history
 
-/test/vcr_cassettes
 
 # Ignore the default SQLite database.
 /db/*.sqlite3

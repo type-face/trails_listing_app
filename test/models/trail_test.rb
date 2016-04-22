@@ -28,14 +28,12 @@ class TrailTest < ActiveSupport::TestCase
 
   test "should update trail from json" do
     Trail.update_or_create_trail_from_json(@update_caddy_lake_trail_json, @caddy_lake_trail)
-    @caddy_lake_trail.reload
-    assert_equal(@caddy_lake_trail.city, @updated_city_name)
+    assert_equal(@caddy_lake_trail.reload.city, @updated_city_name)
   end
 
   test "should not update trail from json if unique_id already exists in database" do
     Trail.update_or_create_trail_from_json(@conflict_trail_json, @caddy_lake_trail)
-    @caddy_lake_trail.reload
-    assert_equal(@caddy_lake_trail.name, "Caddy Lake")
+    assert_equal(@caddy_lake_trail.reload.name, "Caddy Lake")
   end
 
 end

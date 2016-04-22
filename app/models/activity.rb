@@ -13,7 +13,7 @@ class Activity < ActiveRecord::Base
                                             description:          activity[:description],
                                             length:               activity[:length],
                                             rating:               activity[:rating]
-                                            )
+                                          )
 
       if activity_to_update.changed? && activity_to_update.save!
         Rails.logger.info "#{Time.now}: MODIFIED ACTIVITY - id: #{activity_to_update.id}" 

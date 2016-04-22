@@ -1,0 +1,866 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://trailapi-trailapi.p.mashape.com/?limit=50&q%5Bcountry_cont%5D=Canada&q%5Bstate_cont%5D=British%20Columbia
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip
+      X-Mashape-Key:
+      - kTcSO87d4bmshdyXLLsPfhlE98Bmp1Ihiy0jsnb5wnarMuh88m
+      User-Agent:
+      - unirest-ruby/1.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 13 Apr 2016 12:54:22 GMT
+      Etag:
+      - '"cbb0baec7690985eebb653cbb4de2921"'
+      Server:
+      - Mashape/5.0.6
+      Via:
+      - 1.1 vegur
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - b8fd3274-1112-4dce-b979-a4f3c2c13555
+      X-Runtime:
+      - '0.765580'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"places":[{"city":"Penticton","state":"British Columbia","country":"Canada","name":"Apex
+        Mountain Resort","parent_id":null,"unique_id":15289,"directions":null,"lat":49.389847,"lon":-119.900606,"description":null,"date_created":null,"children":[],"activities":[{"name":"Apex
+        Mountain Resort","unique_id":"6-841","place_id":15289,"activity_type_id":9,"activity_type_name":"snow
+        sports","url":"http://www.snowtoit.com/trail.php?c=73&i=841","attribs":{"\"type\"":"\"Lift-serviced
+        \\/ Resort\""},"description":"Apex Mountain offers a wide array of activities
+        in addition to skiing and snowboarding. Visitors have access to snow shoeing,
+        snow tubing, ice skating, and nordic skiing. &lt;br /&gt;<br />&lt;br /&gt;<br
+        />The mountain receives 236 inches in annual snowfall and sits at an elevation
+        of 7,200 feet. The 2,000 vertical feet are covered quickly by the 3 lifts
+        and a tube tow at a rate of 6,700 riders per hour. &lt;br /&gt;<br />&lt;br
+        /&gt;<br />Apex Mountain Resort boasts 59 trails (according to the trail map),
+        of which 10 are beginner, 20 are more difficult, 20 are most difficult, and
+        9 are expert. The longest trail is Grandfather''s Trail at 5 km (3.1 miles).
+        Other popular trails include Highway 97 and Juniper.","length":0.0,"activity_type":{"created_at":"2012-08-15T17:33:19Z","id":9,"name":"snow
+        sports","updated_at":"2012-08-15T17:33:19Z"},"thumbnail":"http://images.snowtoit.com/2011/10/841-0.jpg","rank":null,"rating":0.0}]},{"city":"Hazelton","state":"British
+        Columbia","country":"Canada","name":"Ross Lake Provincial Park","parent_id":null,"unique_id":20435,"directions":"Off
+        Hwy 16, Hazelton BC.","lat":55.24965,"lon":-127.520413,"description":"Ross
+        Lake Park is popular with anglers, boaters and swimmers. A picnic area, beach,
+        hiking trail and boat launch (electric motors only) offer opportunities for
+        an enjoyable family picnic or evening stroll. This park offers a pleasant
+        beach on the lake that is popular with locals for swimming and afternoon BBQ''s.","date_created":null,"children":[],"activities":[{"name":"Ross
+        Lake Provincial Park","unique_id":"2-7016","place_id":20435,"activity_type_id":2,"activity_type_name":"hiking","url":"http://www.tripleblaze.com/trail.php?c=3&i=7016","attribs":{"\"length\"":"\"3\""},"description":"Ross
+        Lake Park visitors can enjoy the gentle 3.5 km Rainmaker Trail that encircles
+        the lake and offers views of the lake, the surrounding mountains and lakeshore
+        vegetation and wildlife. For your own safety and the preservation of the park,
+        obey posted signs and keep to designated trails. Shortcutting trails destroys
+        plant life and soil structure.","length":3.0,"activity_type":{"created_at":"2012-08-15T16:12:21Z","id":2,"name":"hiking","updated_at":"2012-08-15T16:12:21Z"},"thumbnail":null,"rank":null,"rating":0.0}]},{"city":"Port
+        Coquitlam","state":"British Columbia","country":"Canada","name":"Burke Mountain
+        Trails","parent_id":null,"unique_id":4278,"directions":"Go to Port Coquitlam
+        (north side), head north on Coast Meridian all the way to Harper Rd., trailhead
+        just before the gun club.","lat":49.31369,"lon":-122.74933,"description":null,"date_created":null,"children":[],"activities":[{"name":"Burke
+        Mountain Trails","unique_id":"1-2978","place_id":4278,"activity_type_id":5,"activity_type_name":"mountain
+        biking","url":"http://www.singletracks.com/item.php?c=1&i=2978","attribs":{"\"length\"":"\"10\"","\"nightride\"":"null"},"description":"Many,
+        many trails up and down Burke.  If you find the right ones you can go up to
+        the top, then down to the Coquitlam River, along the river and back into town.  Then
+        you play rock paper scissors to see who is going to ride back up Coast Meridian
+        to get the car...","length":10.0,"activity_type":{"created_at":"2012-08-15T16:12:35Z","id":5,"name":"mountain
+        biking","updated_at":"2012-08-15T16:12:35Z"},"thumbnail":"http://images.singletracks.com/2013/06/mobile-1370913871-0.jpg","rank":null,"rating":5.0},{"name":"Burke
+        Mountain Trails","unique_id":"2-2078","place_id":4278,"activity_type_id":2,"activity_type_name":"hiking","url":"http://www.tripleblaze.com/trail.php?c=3&i=2078","attribs":{"\"length\"":"\"10\""},"description":"Burke
+        Mountain Trails features 10 miles of hiking trails near Port Coquitlam, BC.","length":10.0,"activity_type":{"created_at":"2012-08-15T16:12:21Z","id":2,"name":"hiking","updated_at":"2012-08-15T16:12:21Z"},"thumbnail":null,"rank":null,"rating":0.0}]},{"city":"Kelowna","state":"British
+        Columbia","country":"Canada","name":"Angel Falls","parent_id":null,"unique_id":28246,"directions":"June
+        Springs Road","lat":0.0,"lon":0.0,"description":null,"date_created":null,"children":[],"activities":[]},{"city":"Tofino","state":"British
+        Columbia","country":"Canada","name":"Flores Island Marine Provincial Park","parent_id":null,"unique_id":20115,"directions":"Flores
+        Island is located in the central portion of Clayoquot Sound, north of Tofino
+        on the West Coast of Vancouver Island. This park includes the western and
+        southern parts of Flores Island, and is accessible only by boat from Tofino.
+        Boaters can reference marine chart #3674 and #3673 for more information on
+        this area. Water taxis from Tofino and Hot Springs Village offeraccess to
+        the park via the Village of Ahousaht. Nearby communities include: Tofino,
+        Ahousat and Hotsprings Village.","lat":49.247966,"lon":-125.944526,"description":"Flores
+        Island is one of the most popular destinations in Clayoquot Sound. Here, visitors
+        can enjoy hiking, whale watching, fishing, kayaking, beach camping and more.
+        This vast, untamed wilderness area protects undisturbed watersheds with old-growth
+        forest stands of Sitka spruce, as well as representative coastal and marine
+        ecosystems, including excellent spawning conditions for coho salmon, exposed
+        rocky coasts, sandstone reefs, beaches, sheltered channels and bays, fast
+        narrows, mudflats and shallow banks.","date_created":null,"children":[],"activities":[{"name":"Flores
+        Island Provincial Park","unique_id":"2-6145","place_id":20115,"activity_type_id":2,"activity_type_name":"hiking","url":"http://www.tripleblaze.com/trail.php?c=3&i=6145","attribs":{"\"length\"":"\"0\""},"description":"This
+        park has a trail called the &quot;Walk the Wild Side&quot; trail. This route
+        extends 10 km from Ahousat to Cow Bay; most of the route follows sandy beaches.
+        Trails cut across headlands to join with the next beach. At this time, muddy
+        and slippery sections are present on this route. The trail is best accessed
+        from the village of Ahousaht. Water taxis to Ahousaht generally depart from
+        the 1st Street dock in Tofino. For your own safety and the preservation of
+        the park, obey posted signs and keep to designated trails. Shortcutting trails
+        destroys plant life and soil structure.","length":0.0,"activity_type":{"created_at":"2012-08-15T16:12:21Z","id":2,"name":"hiking","updated_at":"2012-08-15T16:12:21Z"},"thumbnail":null,"rank":null,"rating":0.0},{"name":"Flores
+        Island Provincial Park","unique_id":"3-9425","place_id":20115,"activity_type_id":6,"activity_type_name":"camping","url":"http://www.tripleblaze.com/trail.php?c=2&i=9425","attribs":{"\"length\"":"\"3\""},"description":"There
+        are no designated campsites at this park, however random wilderness camping
+        is allowed. No facilities other than a pit toilet are provided. Please practice
+        &quot;Leave No Trace&quot; camping ethics. Flores Island is accessible year
+        round; there is no winter camping fee at this time.  Flores Island is accessible
+        year round; there is no winter camping fee at this time.","length":3.0,"activity_type":{"created_at":"2012-08-15T17:31:31Z","id":6,"name":"camping","updated_at":"2012-08-15T17:31:31Z"},"thumbnail":null,"rank":null,"rating":0.0}]},{"city":"Garden
+        Bay","state":"British Columbia","country":"Canada","name":"Garden Bay Marine
+        Provincial Park","parent_id":null,"unique_id":20127,"directions":"The park
+        is located 30 km from Sechelt, on the Sechelt Peninsula. Follow Highway 101
+        north past Madeira Park; turn left on Garden Bay Road. At Garden Bay Lake
+        keep left and drive approximately 2 km to Claydon Road.","lat":49.648053,"lon":-124.00668,"description":"Garden
+        Bay Provincial Park is a smaller, 402-acre provincial park located near the
+        town of Garden Bay, BC. This park is a center for visits to stores, resorts,
+        restaurants, fueling, etc., and there are opportunities here for hiking, swimming,
+        canoeing, kayaking and fishing.","date_created":null,"children":[],"activities":[{"name":"Garden
+        Bay Marine Provincial Park","unique_id":"2-6620","place_id":20127,"activity_type_id":2,"activity_type_name":"hiking","url":"http://www.tripleblaze.com/trail.php?c=3&i=6620","attribs":{"\"length\"":"\"0\""},"description":"Garden
+        Bay Provincial Park is a smaller, 402-acre provincial park located near the
+        town of Garden Bay, BC. This park is a center for visits to stores, resorts,
+        restaurants, fueling, etc., and there are opportunities here for hiking, swimming,
+        canoeing, kayaking and fishing.","length":0.0,"activity_type":{"created_at":"2012-08-15T16:12:21Z","id":2,"name":"hiking","updated_at":"2012-08-15T16:12:21Z"},"thumbnail":null,"rank":null,"rating":0.0}]},{"city":"Kitimat","state":"British
+        Columbia","country":"Canada","name":"Collinson Point Provincial Park","parent_id":null,"unique_id":20022,"directions":"Southeast
+        of Kitimat.","lat":53.726668,"lon":-127.647621,"description":"More information
+        on this park will be added when it becomes available.","date_created":null,"children":[],"activities":[]},{"city":"Tofino","state":"British
+        Columbia","country":"Canada","name":"Hesquiat Peninsula Provincial Park","parent_id":null,"unique_id":20173,"directions":"Hesquiat
+        Peninsula is located in the northwestern part of Clayoquot Sound on the west
+        coast of Vancouver Island. The park is situated between Nootka Sound and Hesquiat
+        Harbour and is accessible by boat and float plane from Hot Springs Cove, Tofino,
+        Tahsis and Gold River.","lat":49.482885,"lon":-126.499735,"description":"Hesquiat
+        Peninsula Provincial Park is situated on the west coast of Vancouver Island
+        and occupies most of the eastern shore of Nootka Sound. This park is a significant
+        tourism corridor for coastal hiking, boating and sea kayaking and is home
+        to the heritage attraction known as Cougar Annie''s Garden. In 1915, the pioneer
+        settler known as Cougar Annie arrived on the west coast in Hesquiat Harbour
+        and homesteaded on this wilderness property. She bore 8 of her 11 children
+        here, outlasted 4 husbands and carved a magnificent, magical garden out of
+        five acres of this thick and foreboding rainforest. This garden is now one
+        of British Columbia''s premier heritage gardens and tours can be arranged
+        at Boat Basin.","date_created":null,"children":[],"activities":[{"name":"Hesquiat
+        Peninsula Provincial Park","unique_id":"2-6330","place_id":20173,"activity_type_id":2,"activity_type_name":"hiking","url":"http://www.tripleblaze.com/trail.php?c=3&i=6330","attribs":{"\"length\"":"\"0\""},"description":"There
+        are no developed trails at this park, but coastal hiking opportunities do
+        exist, and a number of hardy souls hike from the top of the peninsula (Escalante
+        Point) to Boat Basin every summer. This coastal route is along the beaches
+        and over rocks, crossing creeks along the way. There are also several Indian
+        Reserves to pass through. For your own safety and the preservation of the
+        park keep to designated trails. Shortcutting trails destroys plant life and
+        soil structure.","length":0.0,"activity_type":{"created_at":"2012-08-15T16:12:21Z","id":2,"name":"hiking","updated_at":"2012-08-15T16:12:21Z"},"thumbnail":null,"rank":null,"rating":0.0},{"name":"Hesquiat
+        Peninsula Provincial Park","unique_id":"3-9545","place_id":20173,"activity_type_id":6,"activity_type_name":"camping","url":"http://www.tripleblaze.com/trail.php?c=2&i=9545","attribs":{"\"length\"":"\"3\""},"description":"There
+        are no designated campsites at this park, however random wilderness camping
+        is allowed. No facilities are provided and there is no fee. Hesquiat Peninsula
+        is accessible year round; there is no winter camping fee at this time. Please
+        practice &quot;Leave No Trace&quot; camping ethics.  Hesquiat Peninsula is
+        accessible year round; there is no winter camping fee at this time. Please
+        practice &quot;Leave No Trace&quot; camping ethics.","length":3.0,"activity_type":{"created_at":"2012-08-15T17:31:31Z","id":6,"name":"camping","updated_at":"2012-08-15T17:31:31Z"},"thumbnail":null,"rank":null,"rating":0.0}]},{"city":"Castlegar","state":"British
+        Columbia","country":"Canada","name":"Syringa Provincial Park","parent_id":null,"unique_id":20529,"directions":"Located
+        in south central B.C., 19 km northwest of Castlegar on Hwy 3A. Depending on
+        your direction of travel look for the Robson exit just before or after you
+        cross the bridge over the Kootenay River. The park is a 25 minute drive from
+        Castlegar.","lat":49.370641,"lon":-117.94198,"description":"Syringa Provincial
+        Park rests just north of Castlegar on the bank of Lower Arrow Lake. This 10,915-acre
+        park has plenty of day-use and overnight facilities and has opportunities
+        for hiking, swimming, canoeing, kayaking, fishing, mountain biking, boating
+        and camping.","date_created":null,"children":[],"activities":[{"name":"Syringa
+        Provincial Park","unique_id":"1-6538","place_id":20529,"activity_type_id":5,"activity_type_name":"mountain
+        biking","url":"http://www.singletracks.com/item.php?c=1&i=6538","attribs":{"\"length\"":"\"0\"","\"nightride\"":"null"},"description":"Syringa
+        Provincial Park rests just north of Castlegar on the bank of Lower Arrow Lake.
+        This 10,915-acre park has plenty of day-use and overnight facilities and has
+        opportunities for hiking, swimming, canoeing, kayaking, fishing, mountain
+        biking, boating and camping.","length":0.0,"activity_type":{"created_at":"2012-08-15T16:12:35Z","id":5,"name":"mountain
+        biking","updated_at":"2012-08-15T16:12:35Z"},"thumbnail":null,"rank":null,"rating":0.0},{"name":"Syringa
+        Provincial Park","unique_id":"2-6405","place_id":20529,"activity_type_id":2,"activity_type_name":"hiking","url":"http://www.tripleblaze.com/trail.php?c=3&i=6405","attribs":{"\"length\"":"\"6\""},"description":"Syringa
+        Provincial Park rests just north of Castlegar on the bank of Lower Arrow Lake.
+        This 10,915-acre park has plenty of day-use and overnight facilities and has
+        opportunities for hiking, swimming, canoeing, kayaking, fishing, mountain
+        biking, boating and camping.","length":6.0,"activity_type":{"created_at":"2012-08-15T16:12:21Z","id":2,"name":"hiking","updated_at":"2012-08-15T16:12:21Z"},"thumbnail":null,"rank":null,"rating":0.0},{"name":"Syringa
+        Provincial Park","unique_id":"3-9602","place_id":20529,"activity_type_id":6,"activity_type_name":"camping","url":"http://www.tripleblaze.com/trail.php?c=2&i=9602","attribs":{"\"length\"":"\"3\""},"description":"Syringa
+        Provincial Park rests just north of Castlegar on the bank of Lower Arrow Lake.
+        This 10,915-acre park has plenty of day-use and overnight facilities and has
+        opportunities for hiking, swimming, canoeing, kayaking, fishing, mountain
+        biking, boating and camping.","length":3.0,"activity_type":{"created_at":"2012-08-15T17:31:31Z","id":6,"name":"camping","updated_at":"2012-08-15T17:31:31Z"},"thumbnail":null,"rank":null,"rating":0.0}]},{"city":"Clearwater","state":"British
+        Columbia","country":"Canada","name":"Wire Cache Provincial Park","parent_id":null,"unique_id":20603,"directions":"90
+        km northeast of Clearwater, on the south side of the North Thompson River.
+        Road access is poor; there is potential for a river pullout area. The closest
+        communities are Clearwater, Vavenby, Avola, Blue River and Kamloops.","lat":51.731159,"lon":-119.346905,"description":"A
+        series of old river bends in the North Thompson River. Note that no camping
+        or day-use facilities are provided here. A series of old river bends in the
+        North Thompson River. Note that no camping or day-use facilities are provided
+        here.","date_created":null,"children":[],"activities":[]},{"city":"Valemount","state":"British
+        Columbia","country":"Canada","name":"Jackman Flats Provincial Park","parent_id":null,"unique_id":20190,"directions":"Jackman
+        Flats Provincial park is located 10 km north of Valemount, on Highway 5, minutes
+        from Mount Robson Provincial Park.","lat":52.929871,"lon":-119.399188,"description":"Jackman
+        Flats Provincial Park is a product of ice and wind. At the end of the last
+        ice age, some 11,000 years ago, winds from the main trench of the Fraser River
+        and from, what is now, Kinbasket Lake, deposited vast quantities of sand in
+        the Jackman Flats area. This created an ecosystem considered unique in British
+        Columbia. Rare plant communities and shifting sand dune structures now exist
+        in this rather small park. Excellent recreational opportunities have been
+        enjoyed by Robson Valley residents for many years in this special area. Unregulated
+        motorized use, primarily from all terrain vehicles, has had a devastating
+        effect on not only the rare plant communities but on the structural integrity
+        of the sand dunes. The uniqueness of Jackman Flats can be quickly appreciated
+        when one considers that one plant community, Juniperus-Stereocaulon, is found
+        nowhere else in British Columbia.","date_created":null,"children":[],"activities":[{"name":"Jackman
+        Flats Provincial Park","unique_id":"2-7275","place_id":20190,"activity_type_id":2,"activity_type_name":"hiking","url":"http://www.tripleblaze.com/trail.php?c=3&i=7275","attribs":{"\"length\"":"\"0\""},"description":"For
+        your own safety and the preservation of the park, obey posted signs and keep
+        to designated trails. Look but don''t damage natural objects. Shortcutting
+        trails destroys plant life and soil structure. The fragile ecosystem will
+        be seriously damaged if people or domestic animals go off the trail.","length":0.0,"activity_type":{"created_at":"2012-08-15T16:12:21Z","id":2,"name":"hiking","updated_at":"2012-08-15T16:12:21Z"},"thumbnail":null,"rank":null,"rating":0.0}]},{"city":"Dawson
+        Creek","state":"British Columbia","country":"Canada","name":"Kiskatinaw Provincial
+        Park","parent_id":null,"unique_id":20221,"directions":"Located 28 km north
+        of Dawson Creek off Highway 97 (Alaska Highway) on the Old Alaska Highway.","lat":55.959132,"lon":-120.562313,"description":"The
+        park is located along the banks of the Kiskatinaw River on the original Alaska
+        Highway, near a historic wooden curved trestle bridge. From Kiskatinaw Provincial
+        Park, visitors can take a stroll to the bridge and reflect upon the unique
+        history of the Alaska Highway. Jump in the river for a refreshing swim or
+        spend the day fishing.","date_created":null,"children":[],"activities":[{"name":"Kiskatinaw
+        Provincial Park","unique_id":"3-10016","place_id":20221,"activity_type_id":6,"activity_type_name":"camping","url":"http://www.tripleblaze.com/trail.php?c=2&i=10016","attribs":{"\"length\"":"\"3\""},"description":"The
+        park is located along the banks of the Kiskatinaw River on the original Alaska
+        Highway, near a historic wooden curved trestle bridge. From Kiskatinaw Provincial
+        Park, visitors can take a stroll to the bridge and reflect upon the unique
+        history of the Alaska Highway. Jump in the river for a refreshing swim or
+        spend the day fishing.","length":3.0,"activity_type":{"created_at":"2012-08-15T17:31:31Z","id":6,"name":"camping","updated_at":"2012-08-15T17:31:31Z"},"thumbnail":null,"rank":null,"rating":0.0}]},{"city":"Naramata","state":"British
+        Columbia","country":"Canada","name":"Tote Road Trail","parent_id":null,"unique_id":23755,"directions":"This
+        trail is accessible via the KVR at Naramata at the Rock Ovens Provincial Park.
+        There is a sign posted at the trailhead.","lat":0.0,"lon":0.0,"description":null,"date_created":null,"children":[],"activities":[{"name":"Tote
+        Road Trail","unique_id":"1-7161","place_id":23755,"activity_type_id":5,"activity_type_name":"mountain
+        biking","url":"http://www.singletracks.com/item.php?c=1&i=7161","attribs":{"\"length\"":"\"2\"","\"nightride\"":"null"},"description":"This
+        bit of single track is short, but it''s a great bit of trail. There are a
+        few deep muddy spots that never seem to dry up...you may have to walk through
+        these spots. Otherwise, there are some steep rocky sections in a deep woods
+        terrain. Also, there is a creek crossing, but a hiking bridge keeps your feet
+        dry. See the pictures I added for a map of the trail.","length":2.0,"activity_type":{"created_at":"2012-08-15T16:12:35Z","id":5,"name":"mountain
+        biking","updated_at":"2012-08-15T16:12:35Z"},"thumbnail":"http://images.singletracks.com/2013/07/mobile-1374293180-0.jpg","rank":null,"rating":0.0}]},{"city":"Endako","state":"British
+        Columbia","country":"Canada","name":"Francois Lake Provincial Park","parent_id":null,"unique_id":20122,"directions":"53.96982,-125.07534","lat":53.983007,"lon":-125.036233,"description":"Francois
+        Lake Park is located at the east end of Francois Lake, protecting 25 km of
+        shoreline and predominantly coniferous forests. Recreation opportunities include
+        boating and fishing on Francois Lake, with rustic camping and picnic facilities
+        in a dramatic viewscape. The park''s forest and plant life provides a high
+        quality moose winter habitat and is home to a wide range of mammals, birds
+        and fish species.","date_created":null,"children":[],"activities":[{"name":"Francois
+        Lake Provincial Park","unique_id":"2-6907","place_id":20122,"activity_type_id":2,"activity_type_name":"hiking","url":"http://www.tripleblaze.com/trail.php?c=3&i=6907","attribs":{"\"length\"":"\"0\""},"description":"Francois
+        Lake Park is located at the east end of Francois Lake, protecting 25 km of
+        shoreline and predominantly coniferous forests. The park''s forest and plant
+        life provides a high quality moose winter habitat and is home to a wide range
+        of mammals, birds and fish species.<br /><br />Hiking and walking trails extend
+        all over the beautiful country surrounding Francois Lake. For visitors'' convenience
+        there is a short trail that leads to a day-use area at Black Point. For your
+        own safety and the preservation of the park, obey posted signs and keep to
+        designated trails. Shortcutting trails destroys plant life and soil structure.<br
+        /><br />Hunting is allowed here so beware.","length":0.0,"activity_type":{"created_at":"2012-08-15T16:12:21Z","id":2,"name":"hiking","updated_at":"2012-08-15T16:12:21Z"},"thumbnail":null,"rank":null,"rating":0.0},{"name":"Francois
+        Lake Provincial Park","unique_id":"3-9938","place_id":20122,"activity_type_id":6,"activity_type_name":"camping","url":"http://www.tripleblaze.com/trail.php?c=2&i=9938","attribs":{"\"length\"":"\"3\""},"description":"Francois
+        Lake Park is located at the east end of Francois Lake, protecting 25 km of
+        shoreline and predominantly coniferous forests. The park''s forest and plant
+        life provides a high quality moose winter habitat and is home to a wide range
+        of mammals, birds and fish species.<br /><br />This park offers vehicle accessible
+        campsites on a first-come, first-served basis - campsite reservations are
+        not accepted. Rustic camping is available at Sawmill Point. Facilities include
+        fire rings, pit toilets, picnic tables and a gravel boat ramp. Wilderness,
+        backcountry or walk-in camping is allowed, but no facilities are provided.","length":3.0,"activity_type":{"created_at":"2012-08-15T17:31:31Z","id":6,"name":"camping","updated_at":"2012-08-15T17:31:31Z"},"thumbnail":null,"rank":null,"rating":0.0}]},{"city":"Sicamous","state":"British
+        Columbia","country":"Canada","name":"Yard Creek Provincial Park","parent_id":null,"unique_id":20611,"directions":"Approximately
+        15 kilometres east of Sicamous, along the Trans Canada Highway.","lat":50.903861,"lon":-118.804413,"description":"The
+        landscape surrounding Yard Creek Park is part of the Interior wetbelt characterized
+        by cedar and hemlock forest and lush undergrowth. The park contains a variety
+        of bird species including American dippers. These fascinating little birds
+        dive into the icy waters of the creek and &quot;fly&quot; along under the
+        water in search of water insects. Watch for them on the rocks along the creek.  For
+        more information, please call 250-832-8194.","date_created":null,"children":[],"activities":[]},{"city":"Vernon","state":"British
+        Columbia","country":"Canada","name":"Silver Star Mountain Resort","parent_id":null,"unique_id":15311,"directions":null,"lat":50.367216,"lon":-119.068041,"description":null,"date_created":null,"children":[],"activities":[{"name":"Silver
+        Star Mountain Resort","unique_id":"6-870","place_id":15311,"activity_type_id":9,"activity_type_name":"snow
+        sports","url":"http://www.snowtoit.com/trail.php?c=73&i=870","attribs":{"\"type\"":"\"Lift-serviced
+        \\/ Resort\""},"description":"Silver Star is an expansive winter resort that
+        offers skiers and snowboarders 3,065 skiable acres covered by 276 inches of
+        snow annually and plenty winter activities for visitors of all interests and
+        abilities.<br /><br />Silver Star has a summit elevation of 6,280 feet and
+        a vertical drop of 2,500 feet. Downhill skiers and snowboarders can choose
+        from a whopping 115 trails totaling 58 miles. The longest trail is 5 miles
+        long. <br /><br />The resort has 6 chairlifts and 4 surface lifts that service
+        the trails at an uphill capacity of 14,000 people per hour. The trails are
+        rated 20% easiest, 50% more difficult, 20% most difficult, and 10% extreme.
+        Trails include Moonbeam, Eldorado, and Over the Hill.","length":0.0,"activity_type":{"created_at":"2012-08-15T17:33:19Z","id":9,"name":"snow
+        sports","updated_at":"2012-08-15T17:33:19Z"},"thumbnail":"http://images.snowtoit.com/2011/10/870-0.jpg","rank":null,"rating":0.0}]},{"city":"Fruitvale","state":"British
+        Columbia","country":"Canada","name":"Champion Lakes Provincial Park","parent_id":null,"unique_id":19979,"directions":"Located
+        in south central BC, access to this park is 6 km north-east of Fruitvale off
+        Highway 3B or 8 km west of the junction of Highway 3 and 3B. From the turn
+        off, it''s a 12 km, 20-min drive to the park entrance.","lat":49.191725,"lon":-117.624391,"description":"Known
+        as an ideal destination for family fun, Champion Lakes Provincial Park with
+        its 3 lakes offers an all-inclusive recreational package to visitors including
+        fishing, canoeing, hiking, mountain biking and swimming. There are 6.5 km
+        of multi-use trails linking the lakes together. 3rd lake with its two day-use
+        areas is known for warm water and is popular with the local communities. Champion
+        Lakes Golf and Country Club is a quick 20-min drive from the Park.","date_created":null,"children":[],"activities":[{"name":"Champion
+        Lakes Provincial Park","unique_id":"1-6363","place_id":19979,"activity_type_id":5,"activity_type_name":"mountain
+        biking","url":"http://www.singletracks.com/item.php?c=1&i=6363","attribs":{"\"length\"":"\"6\"","\"nightride\"":"null"},"description":"Bicycles
+        may use trails and roadways. Mountain bikers should always yield the right-of-way
+        to other trail users. Should you encounter hikers on any trail, please yield
+        the right-of-way. Helmets must be worn. Just outside of the park are good
+        cross-country skiing trails that would be suitable for mountain biking.","length":6.0,"activity_type":{"created_at":"2012-08-15T16:12:35Z","id":5,"name":"mountain
+        biking","updated_at":"2012-08-15T16:12:35Z"},"thumbnail":null,"rank":null,"rating":0.0},{"name":"Champion
+        Lakes Provincial Park","unique_id":"2-5941","place_id":19979,"activity_type_id":2,"activity_type_name":"hiking","url":"http://www.tripleblaze.com/trail.php?c=3&i=5941","attribs":{"\"length\"":"\"6\""},"description":"A
+        total of 6.5 km of gentle trails connects the lakes and encompass the second
+        and third lakes. Facility development is concentrated around 3rd Lake. 2nd
+        and 1st lakes remain in their natural states. There is also a trail that leads
+        to a lookout. For your own safety and preservation of the park, obey posted
+        signs and keep to designated trails. Shortcutting trails destroy plant life
+        and soil structure.","length":6.0,"activity_type":{"created_at":"2012-08-15T16:12:21Z","id":2,"name":"hiking","updated_at":"2012-08-15T16:12:21Z"},"thumbnail":null,"rank":null,"rating":0.0},{"name":"Champion
+        Lakes Provincial Park","unique_id":"3-9260","place_id":19979,"activity_type_id":6,"activity_type_name":"camping","url":"http://www.tripleblaze.com/trail.php?c=2&i=9260","attribs":{"\"length\"":"\"3\""},"description":"Known
+        as an ideal destination for family fun, Champion Lakes Provincial Park with
+        its 3 lakes offers an all-inclusive recreational package to visitors including
+        fishing, canoeing, hiking, mountain biking and swimming. There are 6.5 km
+        of multi-use trails linking the lakes together. 3rd lake with its two day-use
+        areas is known for warm water and is popular with the local communities. Champion
+        Lakes Golf and Country Club is a quick 20-min drive from the Park.","length":3.0,"activity_type":{"created_at":"2012-08-15T17:31:31Z","id":6,"name":"camping","updated_at":"2012-08-15T17:31:31Z"},"thumbnail":null,"rank":null,"rating":0.0}]},{"city":"Okanagan
+        Falls","state":"British Columbia","country":"Canada","name":"Okanagan Falls
+        Provincial Park","parent_id":null,"unique_id":20361,"directions":"Located
+        on Green Lake Road, approximately 500 metres from the junction of Hwy. 97
+        and Green Lake Road. Use caution, narrow road with blind corner. At the town
+        of Okanagan Falls.","lat":49.340708,"lon":-119.581863,"description":"Just
+        above the Okanagan River, cool deciduous trees provide a contrast to the parched
+        hills above. This oasis is famous among naturalists for its superb bird watching,
+        wildlife viewing, nature study, photography opportunities and a variety of
+        bats. A lovely array of colours occurs in autumn. The diverse recreational
+        opportunities will please nature lovers, campers and fishing enthusiasts alike.","date_created":null,"children":[],"activities":[{"name":"Okanagan
+        Falls Provincial Park","unique_id":"2-6029","place_id":20361,"activity_type_id":2,"activity_type_name":"hiking","url":"http://www.tripleblaze.com/trail.php?c=3&i=6029","attribs":{"\"length\"":"\"0\""},"description":"A
+        trail runs along the dike on the west side of the Okanagan River through the
+        campground and continues south outside the park boundary. There is an interpretive
+        sign developed by the Okanagan Nation Fisheries Commission with information
+        on the fishery, both past and present, in the Okanagan River. It is located
+        beside the campground.","length":0.0,"activity_type":{"created_at":"2012-08-15T16:12:21Z","id":2,"name":"hiking","updated_at":"2012-08-15T16:12:21Z"},"thumbnail":null,"rank":null,"rating":0.0},{"name":"Okanagan
+        Falls Provincial Park","unique_id":"3-9328","place_id":20361,"activity_type_id":6,"activity_type_name":"camping","url":"http://www.tripleblaze.com/trail.php?c=2&i=9328","attribs":{"\"length\"":"\"3\""},"description":"Just
+        above the Okanagan River, cool deciduous trees provide a contrast to the parched
+        hills above. This oasis is famous among naturalists for its superb bird watching,
+        wildlife viewing, nature study, photography opportunities and a variety of
+        bats. A lovely array of colours occurs in autumn. The diverse recreational
+        opportunities will please nature lovers, campers and fishing enthusiasts alike.","length":3.0,"activity_type":{"created_at":"2012-08-15T17:31:31Z","id":6,"name":"camping","updated_at":"2012-08-15T17:31:31Z"},"thumbnail":null,"rank":null,"rating":0.0}]},{"city":"Sechelt","state":"British
+        Columbia","country":"Canada","name":"Tetrahedron Provincial Park","parent_id":null,"unique_id":20540,"directions":"Tetrahedron
+        Provincial Park is located northeast of Sechelt. The main access to the park
+        is via Gray Creek logging road. Use caution at all times on active logging
+        roads and drive with your headlights on. You are urged to travel outside of
+        working hours - 8 a.m. to 6 p.m., Monday to Friday. Four-wheel drive vehicles
+        with good winter tires or chains are recommended during winter conditions
+        - there is no snow plowing.","lat":49.603037,"lon":-123.50347,"description":"The
+        park protects a wide range of landscapes, including mountain peaks, lakes,
+        streams and wetlands, and the Sechelt area community watershed. Elevations
+        in the Tetrahedron range from 900 to 1,800 metres and include Tetrahedron
+        Peak, Panther Peak and Mount Steele. Recreational opportunities at this park
+        are limited but include hiking, cross country skiing and overnight use of
+        the cabins.","date_created":null,"children":[],"activities":[{"name":"Tetrahedron
+        Provincial Park","unique_id":"2-6677","place_id":20540,"activity_type_id":2,"activity_type_name":"hiking","url":"http://www.tripleblaze.com/trail.php?c=3&i=6677","attribs":{"\"length\"":"\"0\""},"description":"This
+        park has hiking/ walking trails. For your own safety and the preservation
+        of the park, obey posted signs and keep to designated trails. Shortcutting
+        trails destroys plant life and soil structure.","length":0.0,"activity_type":{"created_at":"2012-08-15T16:12:21Z","id":2,"name":"hiking","updated_at":"2012-08-15T16:12:21Z"},"thumbnail":null,"rank":null,"rating":0.0}]},{"city":"Fairmont
+        Hot Springs","state":"British Columbia","country":"Canada","name":"Fairmont
+        Hot Springs Resort","parent_id":null,"unique_id":15293,"directions":null,"lat":50.339324,"lon":-115.826252,"description":null,"date_created":null,"children":[],"activities":[{"name":"Fairmont
+        Hot Springs Resort","unique_id":"6-846","place_id":15293,"activity_type_id":9,"activity_type_name":"snow
+        sports","url":"http://www.snowtoit.com/trail.php?c=73&i=846","attribs":{"\"type\"":"\"Lift-serviced
+        \\/ Resort\""},"description":"Fairmont Hot Springs has plenty of activities
+        for winter sports enthusiasts. Activities include nordic alpine skiing and
+        snowboarding, nordic skiing, and snowshoeing. Fairmont also has terrain parks
+        for other thrill seekers. <br /><br />The resort boasts 12 trails that are
+        accessed by 3 lifts. There are 3 beginner trails, 5 intermediate trails, and
+        4 advanced trails. Popular runs include High Plains Drifter, Snow Gun, and
+        Desperado.","length":0.0,"activity_type":{"created_at":"2012-08-15T17:33:19Z","id":9,"name":"snow
+        sports","updated_at":"2012-08-15T17:33:19Z"},"thumbnail":"http://images.snowtoit.com/2011/10/846-0.jpg","rank":null,"rating":0.0}]},{"city":"Kamloops","state":"British
+        Columbia","country":"Canada","name":"McConnell Lake Provincial Park","parent_id":null,"unique_id":20284,"directions":"Take
+        the Lac le Jeune Exit off Hwy #5 -- the park is 35 km south of Kamloops and
+        49 km north of Merritt.","lat":50.530717,"lon":-120.453451,"description":"McConnell
+        Lake is popular with fishermen and it is noted for rainbow trout to 1.5  kg.","date_created":null,"children":[],"activities":[{"name":"McConnell
+        Lake Provincial Park","unique_id":"2-6926","place_id":20284,"activity_type_id":2,"activity_type_name":"hiking","url":"http://www.tripleblaze.com/trail.php?c=3&i=6926","attribs":{"\"length\"":"\"45\""},"description":"There
+        is a primitive trail around the lake. There are extensive hiking trails available
+        at nearby Stake Lake. This area offers over 45 km of trails.","length":45.0,"activity_type":{"created_at":"2012-08-15T16:12:21Z","id":2,"name":"hiking","updated_at":"2012-08-15T16:12:21Z"},"thumbnail":null,"rank":null,"rating":0.0}]},{"city":"Fort
+        St. James","state":"British Columbia","country":"Canada","name":"Trembleur
+        Lake Provincial Park","parent_id":null,"unique_id":20552,"directions":"Trembleur
+        Lake Park is located on the north side of the lake approximately 9 kilometres
+        west of the Middle River. UTM Zone 10: 356500E - 6077500N (NTS map reference:
+        93K/14) The nearest community is Fort St. James.","lat":54.827213,"lon":-125.308335,"description":"This
+        small park on Trembleur Lake has been preserved as part of the Stuart-Trembleur-Takla
+        Lakes boating system. The site provides no facilities but offers a protected
+        anchorage and sandy beach. Trembleur Lake is almost 50 kilometres long. It
+        has an irregular shoreline with sheltered bays and coves, and a scenic wilderness
+        setting. Wildlife viewing, boating, hunting, and angling are popular pursuits
+        in the area.","date_created":null,"children":[],"activities":[{"name":"Trembleur
+        Lake Provincial Park","unique_id":"3-9207","place_id":20552,"activity_type_id":6,"activity_type_name":"camping","url":"http://www.tripleblaze.com/trail.php?c=2&i=9207","attribs":{"\"length\"":"\"3\""},"description":"Wilderness,
+        backcountry or walk-in camping is allowed, but no facilities are provided.
+        Practice ''leave no trace'' camping; choose a camp spot that will do the least
+        damage to vegetation; if you pack it in, pack it out; do not damage live vegetation;
+        dispose of personal waste or waste water at least 100 metres from the lake
+        or any creek.","length":3.0,"activity_type":{"created_at":"2012-08-15T17:31:31Z","id":6,"name":"camping","updated_at":"2012-08-15T17:31:31Z"},"thumbnail":null,"rank":null,"rating":0.0}]},{"city":"Bakerville","state":"British
+        Columbia","country":"Canada","name":"Hyland River Provincial Park","parent_id":null,"unique_id":20183,"directions":"Alaska
+        Highway, Stikine Region, BC V0C, Canada","lat":59.961855,"lon":-128.143203,"description":"Information
+        on this park will be added as it becomes available.","date_created":null,"children":[],"activities":[]},{"city":"McLeod
+        Lake","state":"British Columbia","country":"Canada","name":"Pine Le Moray
+        Provincial Park","parent_id":null,"unique_id":20384,"directions":"Pine Le
+        Moray Provincial Park and Protected Area is located on the east and west slopes
+        of the continental divide, 70 km southwest of Chetwynd and 50 km northeast
+        of McLeod Lake. The park''s northern and northwestern boundary is adjacent
+        to Highway 97 near Pine Pass. The park can also be accessed via a forest service
+        road on the east side along Le Moray Creek.","lat":55.377809,"lon":-122.611153,"description":"Pine
+        Le Moray Provincial Park sits in the rugged Hart Ranges of the Rocky Mountains.
+        Activities here include hiking, swimming, canoeing, kayaking, fishing, mountain
+        biking, horseback riding, snowmobiling and camping.","date_created":null,"children":[],"activities":[{"name":"Pine
+        Le Moray Provincial Park","unique_id":"1-6524","place_id":20384,"activity_type_id":5,"activity_type_name":"mountain
+        biking","url":"http://www.singletracks.com/item.php?c=1&i=6524","attribs":{"\"length\"":"\"0\"","\"nightride\"":"null"},"description":"Pine
+        Le Moray Provincial Park sits in the rugged Hart Ranges of the Rocky Mountains.
+        Activities here include hiking, swimming, canoeing, kayaking, fishing, mountain
+        biking, horseback riding, snowmobiling and camping.","length":0.0,"activity_type":{"created_at":"2012-08-15T16:12:35Z","id":5,"name":"mountain
+        biking","updated_at":"2012-08-15T16:12:35Z"},"thumbnail":null,"rank":null,"rating":0.0},{"name":"Pine
+        Le Moray Provincial Park","unique_id":"2-6369","place_id":20384,"activity_type_id":2,"activity_type_name":"hiking","url":"http://www.tripleblaze.com/trail.php?c=3&i=6369","attribs":{"\"length\"":"\"0\""},"description":"Pine
+        Le Moray Provincial Park sits in the rugged Hart Ranges of the Rocky Mountains.
+        Activities here include hiking, swimming, canoeing, kayaking, fishing, mountain
+        biking, horseback riding, snowmobiling and camping.","length":0.0,"activity_type":{"created_at":"2012-08-15T16:12:21Z","id":2,"name":"hiking","updated_at":"2012-08-15T16:12:21Z"},"thumbnail":null,"rank":null,"rating":0.0},{"name":"Pine
+        Le Moray Provincial Park","unique_id":"3-9575","place_id":20384,"activity_type_id":6,"activity_type_name":"camping","url":"http://www.tripleblaze.com/trail.php?c=2&i=9575","attribs":{"\"length\"":"\"3\""},"description":"Pine
+        Le Moray Provincial Park sits in the rugged Hart Ranges of the Rocky Mountains.
+        Activities here include hiking, swimming, canoeing, kayaking, fishing, mountain
+        biking, horseback riding, snowmobiling and camping.","length":3.0,"activity_type":{"created_at":"2012-08-15T17:31:31Z","id":6,"name":"camping","updated_at":"2012-08-15T17:31:31Z"},"thumbnail":null,"rank":null,"rating":0.0}]},{"city":"Oliver","state":"British
+        Columbia","country":"Canada","name":"Mount Baldy Ski Area","parent_id":null,"unique_id":15300,"directions":null,"lat":49.143827,"lon":-119.236905,"description":null,"date_created":null,"children":[],"activities":[{"name":"Mount
+        Baldy Ski Area","unique_id":"6-856","place_id":15300,"activity_type_id":9,"activity_type_name":"snow
+        sports","url":"http://www.snowtoit.com/trail.php?c=73&i=856","attribs":{"\"type\"":"\"Lift-serviced
+        \\/ Resort\""},"description":"At Mount Baldy Ski Area, skiers and snowboarders
+        experience 1,293 feet of vertical drop and descend from a summit of 7,557
+        feet.<br /><br />Mount Baldy has 35 trails spanning over 500 acres of skiable
+        terrain. The trails are rated 29% easier, 41% intermediate, and 30% difficult.
+        The trails are dusted by 258 inches of snowfall annually. 4 lifts service
+        the trails. Trails include Dividend, Maverick, Baldy Trail.","length":0.0,"activity_type":{"created_at":"2012-08-15T17:33:19Z","id":9,"name":"snow
+        sports","updated_at":"2012-08-15T17:33:19Z"},"thumbnail":"http://images.snowtoit.com/2011/10/856-0.jpg","rank":null,"rating":0.0}]},{"city":"Monte
+        Lake","state":"British Columbia","country":"Canada","name":"Monte Lake Provincial
+        Park","parent_id":null,"unique_id":20303,"directions":"32 km southeast of
+        Kamloops on Hwy #97.","lat":50.494938,"lon":-119.832834,"description":"Monte
+        Lake Provincial Park is a tiny, 20-acre park that lies on the east shoreline
+        of Monte Lake. This park is very accessible as it sits on Hwy #97 but there
+        are no day-use for overnight facilities here.","date_created":null,"children":[],"activities":[]},{"city":"Mackenzie","state":"British
+        Columbia","country":"Canada","name":"Chase Provincial Park","parent_id":null,"unique_id":19982,"directions":"Chase
+        Provincial Park is located 70 km north of Germansen Landing. No road access
+        into the park. A branch of the Finlay-Osilinka forest service road approaches
+        the southern park boundary, but a crossing of the Mesilinka River is required
+        to reach the park and there is no bridge to cross.","lat":56.650402,"lon":-125.14068,"description":"Chase
+        Provincial Park is a massive 89,516-acre provincial park that is centered
+        around Carina and Tomias Lakes. This park is very remote and has no facilities
+        but it is a great place to get away from it all and do some fishing, hiking
+        or backcountry camping.","date_created":null,"children":[],"activities":[{"name":"Chase
+        Provincial Park","unique_id":"2-6618","place_id":19982,"activity_type_id":2,"activity_type_name":"hiking","url":"http://www.tripleblaze.com/trail.php?c=3&i=6618","attribs":{"\"length\"":"\"0\""},"description":"Chase
+        Provincial Park is a massive 89,516-acre provincial park that is centered
+        around Carina and Tomias Lakes. This park is very remote and has no facilities
+        but it is a great place to get away from it all and do some fishing, hiking
+        or backcountry camping.","length":0.0,"activity_type":{"created_at":"2012-08-15T16:12:21Z","id":2,"name":"hiking","updated_at":"2012-08-15T16:12:21Z"},"thumbnail":null,"rank":null,"rating":0.0},{"name":"Chase
+        Provincial Park","unique_id":"3-9754","place_id":19982,"activity_type_id":6,"activity_type_name":"camping","url":"http://www.tripleblaze.com/trail.php?c=2&i=9754","attribs":{"\"length\"":"\"3\""},"description":"Chase
+        Provincial Park is a massive 89,516-acre provincial park that is centered
+        around Carina and Tomias Lakes. This park is very remote and has no facilities
+        but it is a great place to get away from it all and do some fishing, hiking
+        or backcountry camping.","length":3.0,"activity_type":{"created_at":"2012-08-15T17:31:31Z","id":6,"name":"camping","updated_at":"2012-08-15T17:31:31Z"},"thumbnail":null,"rank":null,"rating":0.0}]},{"city":"Castlegar","state":"British
+        Columbia","country":"Canada","name":"Nancy Greene Provincial Park","parent_id":null,"unique_id":20337,"directions":"Located
+        in south central BC, the park is at the junction of highway 3 and 3B. On highway
+        3, you are 26 km west of Castlegar or 44 km east of Christina Lake. On highway
+        3B, you are 29 km north of Rossland. A 20-min drive to Castlegar or Rossland.","lat":49.247198,"lon":-117.935741,"description":"A
+        roadside park with a natural setting and sub-alpine lake, Nancy Greene Provincial
+        Park is a welcoming site for weary travellers. Tucked in the Monashee Mountains
+        it is a popular overnight stop for tourists and also provides day use opportunities
+        for local residents wishing to escape the summer heat of the valley. It is
+        the perfect place to enjoy fishing, picnicking, walking, swimming, boating
+        and in winter nordic skiing. The special feature in the park is the sub alpine
+        lake.","date_created":null,"children":[],"activities":[{"name":"Nancy Greene
+        Provincial Park","unique_id":"2-6845","place_id":20337,"activity_type_id":2,"activity_type_name":"hiking","url":"http://www.tripleblaze.com/trail.php?c=3&i=6845","attribs":{"\"length\"":"\"5\""},"description":"An
+        easy, wide, hard packed 5 km loop trail gently meanders around Nancy Greene
+        lake. You can access the trail from either side of the beach. The trail follows
+        the shoreline, offers lake views and will lead you through a marsh area as
+        well as a mixed forest of pine, spruce, fir and larch. Allow yourself 45 minutes
+        to an hour to complete this relaxing hike. For your own safety and the preservation
+        of the park, obey posted signs and keep to designated trails. Shortcutting
+        trails destroys plant life and soil structure.","length":5.0,"activity_type":{"created_at":"2012-08-15T16:12:21Z","id":2,"name":"hiking","updated_at":"2012-08-15T16:12:21Z"},"thumbnail":null,"rank":null,"rating":0.0},{"name":"Nancy
+        Greene Provincial Park","unique_id":"3-9902","place_id":20337,"activity_type_id":6,"activity_type_name":"camping","url":"http://www.tripleblaze.com/trail.php?c=2&i=9902","attribs":{"\"length\"":"\"3\""},"description":"The
+        park has 10 parking lot style sites. The tables, on either side of the paved
+        parking area are offset from their designated parking stalls. The large parking
+        lot allows open parking and can accommodate extra vehicles or larger rigs.
+        There are no tent sites or tent pads. Not all the tables are shaded but the
+        elevation does help to keep it cool during the day. Open from mid June to
+        mid September the park offers campsites on a first-come, first-served basis.
+        Campsite reservations are not accepted. Visitors can select any site and staff
+        will come to collect fees. There is no pay phone in the park. The closest
+        store is in Castlegar, 26 km east on highway 3.","length":3.0,"activity_type":{"created_at":"2012-08-15T17:31:31Z","id":6,"name":"camping","updated_at":"2012-08-15T17:31:31Z"},"thumbnail":null,"rank":null,"rating":0.0}]},{"city":"Rock
+        Creek","state":"British Columbia","country":"Canada","name":"Johnstone Creek
+        Provincial Park","parent_id":null,"unique_id":20200,"directions":"Located
+        5 km west of Rock Creek on Highway #3. The closest communities, towns and
+        cities are Rock Creek, Bridesville and Osoyoos.","lat":49.047878,"lon":-119.051048,"description":"Located
+        east of Osoyoos, this park offers camping in a quiet, forested creek side
+        setting. It provides a convenient escape from the hectic Okanagan Valley.
+        The park has 38 hectares of mature Douglas fir, larch and spruce trees that
+        provide habitat for woodpeckers and other cavity nesting bird species. White-tailed
+        deer are often seen in the park.","date_created":null,"children":[],"activities":[{"name":"Johnstone
+        Creek Provincial Park","unique_id":"2-6062","place_id":20200,"activity_type_id":2,"activity_type_name":"hiking","url":"http://www.tripleblaze.com/trail.php?c=3&i=6062","attribs":{"\"length\"":"\"0\""},"description":"Take
+        15 minutes to hike a short loop along the creek and out to three different
+        benches that offer views of the rugged terrain of ravines and gorges that
+        surrounds this little park. There are steep cliffs beyond the benches, do
+        not hike beyond the viewpoints. For your own safety and the preservation of
+        the park, obey posted signs and keep to designated trails. Shortcutting trails
+        destroys plant life and soil structure.","length":0.0,"activity_type":{"created_at":"2012-08-15T16:12:21Z","id":2,"name":"hiking","updated_at":"2012-08-15T16:12:21Z"},"thumbnail":null,"rank":null,"rating":0.0},{"name":"Johnstone
+        Creek Provincial Park","unique_id":"3-9360","place_id":20200,"activity_type_id":6,"activity_type_name":"camping","url":"http://www.tripleblaze.com/trail.php?c=2&i=9360","attribs":{"\"length\"":"\"3\""},"description":"Located
+        east of Osoyoos, this park offers camping in a quiet, forested creek side
+        setting. It provides a convenient escape from the hectic Okanagan Valley.
+        The park has 38 hectares of mature Douglas fir, larch and spruce trees that
+        provide habitat for woodpeckers and other cavity nesting bird species. White-tailed
+        deer are often seen in the park.","length":3.0,"activity_type":{"created_at":"2012-08-15T17:31:31Z","id":6,"name":"camping","updated_at":"2012-08-15T17:31:31Z"},"thumbnail":null,"rank":null,"rating":0.0}]},{"city":"Little
+        Fort","state":"British Columbia","country":"Canada","name":"Eakin Creek Canyon
+        Provincial Park","parent_id":null,"unique_id":20075,"directions":"5 km west
+        of Little Fort, south of Hwy #24. There are no public roads entering the park
+        and no developed trails in the park. The only way to access the park is through
+        self-guided exploration with a map and compass.","lat":51.4563,"lon":-120.228403,"description":"Many
+        interesting geological features are found in this short section of narrow
+        canyon on Eakin Creek. Special features in the park is a small, narrow rock
+        canyon with steep walls, natural tunnels and rock outcrops. Note that no camping
+        or day-use facilities are provided here.","date_created":null,"children":[],"activities":[]},{"city":"Summerland","state":"British
+        Columbia","country":"Canada","name":"Darke Lake Provincial Park","parent_id":null,"unique_id":20048,"directions":"Located
+        northwest of Summerland off Hwy 97 onto approximately 16 km of gravel road.
+        Follow Fish Lake Road through Meadow Valley to the park. The closest community,
+        town or city is Summerland.","lat":49.714593,"lon":-119.870012,"description":"Off
+        the beaten track and surrounded by fir and pine-clad hills, this cool, quiet
+        retreat is a great getaway for those who love to fish. Local people call this
+        the &quot;Fish Lake&quot; for the great rainbow and eastern brook trout. When
+        the weather is warm, hikers will enjoy this remote spot as much as anglers.
+        Also perfect for ice fishing in the winter. Not recommended for large RV units.","date_created":null,"children":[],"activities":[{"name":"Darke
+        Lake Provincial Park","unique_id":"3-9205","place_id":20048,"activity_type_id":6,"activity_type_name":"camping","url":"http://www.tripleblaze.com/trail.php?c=2&i=9205","attribs":{"\"length\"":"\"3\""},"description":"This
+        park offers a rustic camping experience for those interested mainly in fishing.
+        There are no designated sites and the area is best suited to truck and camper
+        units as opposed to trailers or motor homes. There are no picnic tables or
+        taps. Campfires are only allowed in the designated fire pits in the campground.
+        The camping area is in mature Douglas fir forest with some old growth cottonwood
+        a short distance from the lake. The campsite is open year round and is user-maintained.","length":3.0,"activity_type":{"created_at":"2012-08-15T17:31:31Z","id":6,"name":"camping","updated_at":"2012-08-15T17:31:31Z"},"thumbnail":null,"rank":null,"rating":0.0}]},{"city":"Prince
+        George","state":"British Columbia","country":"Canada","name":"Ptarmigan Creek
+        Provincial Park and Protected Area","parent_id":null,"unique_id":20406,"directions":"The
+        access road to the park and protected area is about 5 km west of Crescent
+        Spur, about 165 km east of Prince George along the Yellowhead (Highway 16)
+        corridor, approximately 500 m west of Catfish Creek. Ptarmigan Creek Provincial
+        Park is close to Erg Mountain Provincial Park, and the two parks share to
+        same access road and trail head. The trailhead is 8kms from highway 16.","lat":53.574923,"lon":-120.855573,"description":"Ptarmigan
+        Creek Provincial Park and Protected Area is a narrow, steep-sided valley at
+        the north end of the Cariboo Mountains Ecosection above the Upper Fraser Trench.
+        The park protects 4,633 hectares of the complete, intact watershed of the
+        east branch of Ptarmigan Creek, a tributary to the Fraser River.  The park
+        protects an entire watershed and habitat for Caribou and Grizzly Bears. Bring
+        your own drinking water as potable water is not available in the park.","date_created":null,"children":[],"activities":[{"name":"Ptarmigan
+        Creek Provincial Park and Protected Area","unique_id":"2-7111","place_id":20406,"activity_type_id":2,"activity_type_name":"hiking","url":"http://www.tripleblaze.com/trail.php?c=3&i=7111","attribs":{"\"length\"":"\"11\""},"description":"From
+        Crescent Spur along the Yellowhead Highway (Hwy 16), the park is accessible
+        via the Ptarmigan Creek Forest Road (about 8 km). From this location, an 11
+        km trail follows Ptarmigan Creek to three subalpine lakes (Hammel Lakes) near
+        the headwaters.","length":11.0,"activity_type":{"created_at":"2012-08-15T16:12:21Z","id":2,"name":"hiking","updated_at":"2012-08-15T16:12:21Z"},"thumbnail":null,"rank":null,"rating":0.0},{"name":"Ptarmigan
+        Creek Provincial Park and Protected Area","unique_id":"3-10071","place_id":20406,"activity_type_id":6,"activity_type_name":"camping","url":"http://www.tripleblaze.com/trail.php?c=2&i=10071","attribs":{"\"length\"":"\"3\""},"description":"Wilderness,
+        backcountry or walk-in camping is allowed, but no facilities are provided.  Winter
+        camping is open for backcountry skiing, but no facilites are provided.","length":3.0,"activity_type":{"created_at":"2012-08-15T17:31:31Z","id":6,"name":"camping","updated_at":"2012-08-15T17:31:31Z"},"thumbnail":null,"rank":null,"rating":0.0}]},{"city":"Vernon","state":"British
+        Columbia","country":"Canada","name":"Ellison Park","parent_id":null,"unique_id":26161,"directions":"In
+        Vernon, BC, at the intersection of Highway 97, Highway 6 and 25th Ave, take
+        the 25th Ave turn. Follow this road continuing on as it turns into Okanagan
+        Landing Road. Keep following this and it will eventually pass most of the
+        houses and enter a more forested area. You will see a sign for Ellison Park.","lat":50.17784,"lon":-119.43193,"description":null,"date_created":null,"children":[],"activities":[{"name":"Ellison
+        Park","unique_id":"1-8677","place_id":26161,"activity_type_id":5,"activity_type_name":"mountain
+        biking","url":"http://www.singletracks.com/item.php?c=1&i=8677","attribs":{"\"length\"":"\"6\"","\"nightride\"":"null"},"description":"At
+        the head of the trail, there is an outhouse and a tool station with a air
+        pump.&lt;br /&gt;<br />&lt;br /&gt;<br />Ellison Park is a fun singletrack
+        network of trails. There is a bit of climbing involved with switchbacks and
+        some technical stuff here and there. A rider could take a quick burn on a
+        few perimeter trails or could go thru many trails going back and forth. All
+        of the trails are well marked with signs and it is pretty easy to figure out
+        where you are. We have been to this park three times now and the time spent
+        here varies.","length":6.0,"activity_type":{"created_at":"2012-08-15T16:12:35Z","id":5,"name":"mountain
+        biking","updated_at":"2012-08-15T16:12:35Z"},"thumbnail":"http://images.singletracks.com/2014/08/P1000120.jpg","rank":null,"rating":5.0}]},{"city":"Port
+        Alberni","state":"British Columbia","country":"Canada","name":"Nitinat River
+        Provincial Park","parent_id":null,"unique_id":20350,"directions":"Nitinat
+        River Provincial Park is located above Nitinat Lake, northwest of Port Renfrew
+        on southern Vancouver Island. The park can be accessed via Port Alberni, Cowichan
+        Lake or Port Renfrew along the Nitinat Main logging road. Two sites - Nitinat
+        River Falls and Nitinat River bridge pool - are located approximately 8 and
+        15 km southwest of Cowichan Lake, accessed via logging roads. Nearby communities
+        include: Cowichan Lake, Duncan, Port Alberni, Port Renfrew","lat":48.894298,"lon":-124.555343,"description":"Nestled
+        in an old growth forest of Douglas fir and Western hemlock, rugged Nitinat
+        River Provincial Park offers opportunities for wilderness hiking and camping,
+        as well as sports fishing and wildlife viewing. The Nitinat River carves through
+        this lush forest, creating a series of spectacular falls and quiet pools perfect
+        for viewing steelhead and salmon.While these deep pools within the canyon
+        are closed to anglers, fishing is possible in the area around the Nitinat
+        River bridge pool. This scenic wilderness park, which protects a variety of
+        rare and endangered plant species, has no developed camping or day-use facilities,
+        aside from a rough, unmaintained route leading from the roadside to the river.Nitinat
+        River Park can be reached by logging road from the communities of Port Alberni,
+        Cowichan Lake and Port Renfrew.","date_created":null,"children":[],"activities":[{"name":"Nitinat
+        River Provincial Park","unique_id":"3-9883","place_id":20350,"activity_type_id":6,"activity_type_name":"camping","url":"http://www.tripleblaze.com/trail.php?c=2&i=9883","attribs":{"\"length\"":"\"3\""},"description":"There
+        are no designated campsites at this park, however random wilderness camping
+        is allowed. No facilities are provided. Please practice &quot;Leave No Trace&quot;
+        camping ethics.","length":3.0,"activity_type":{"created_at":"2012-08-15T17:31:31Z","id":6,"name":"camping","updated_at":"2012-08-15T17:31:31Z"},"thumbnail":null,"rank":null,"rating":0.0}]},{"city":"Lillooet","state":"British
+        Columbia","country":"Canada","name":"Seton Portage Historic Provincial Park","parent_id":null,"unique_id":20453,"directions":"70
+        km west of Lillooet on the south side of the Seton River; access is via gravel
+        road from Shalalth to Seton Portage. The park is located between BC Railway
+        and the road connecting Shalalth to Seton Portage.","lat":50.707218,"lon":-122.289273,"description":"This
+        historically significant site commemorates the location of the first railway
+        in British Columbia. This small park is the site of the Seton Portage tourist
+        information centre, which is housed in an old railway caboose. Note that no
+        camping or day-use facilities are provided.","date_created":null,"children":[],"activities":[]},{"city":"Williams
+        Lake","state":"British Columbia","country":"Canada","name":"White Pelican
+        Provincial Park","parent_id":null,"unique_id":20597,"directions":"White Pelican
+        Park is located approximately 60 km northwest of Williams Lake on the Chilcotin
+        Plateau.","lat":52.296505,"lon":-122.978993,"description":"Stum Lake, within
+        White Pelican Provincial Park, is closed to the public from March 1 - August
+        31 every year to protect the White Pelican nesting colony. Canoeing, boating,
+        hunting, trapping, discharge of firearms, aircraft operation below 600 metres
+        in elevation, and aircraft landing are prohibited on Stum Lake (located within
+        the park) from March 1st to August 31st every year due to the American White
+        Pelican nesting there. This colony of American White Pelicans is the only
+        nesting colony in British Columbia. They are very sensitive to disturbance;
+        disturbances can result in the loss of all young. Pelican viewing opportunities
+        exist at Nazko Lake Park and in other lakes in the Chilcotin.","date_created":null,"children":[],"activities":[]},{"city":"Port
+        McNeill","state":"British Columbia","country":"Canada","name":"Tahsish-Kwois
+        Provincial Park","parent_id":null,"unique_id":20530,"directions":"Tahsish-Kwois
+        Park is located approximately 40 km south of Port McNeill and 20 km east of
+        the village of Kyuquot on northern Vancouver Island. Access to the park is
+        primarily by boat up the mouth of Tahsish Inlet. Boaters can reference marine
+        chart # 3682 (Kyuquot Sound) for more information on this area.","lat":50.217813,"lon":-127.351217,"description":"Tahsish-Kwois
+        Provincial Park is located in Kyuquot Sound on northwestern Vancouver Island.
+        The closest settlement to the park is the village of Kyuquot, which lies about
+        20 km to the west. This rugged, isolated park is one of the largest parks
+        on Vancouver Island and features old growth forest, two lakes, a scenic river
+        canyon and river valleys. The south end of the park encircles the Tahsish
+        River Ecological Reserve, with the river portion of the ecological reserve
+        providing the primary access into the park. Accessible primarily by boat,
+        this park offers outstanding wilderness recreation opportunities, including
+        wildlife viewing, old-growth forest exploration, backcountry hiking and camping,
+        nature study and fresh water fishing. Tahsish-Kwois also contains one of the
+        most important Roosevelt elk winter ranges on Vancouver Island. Bald eagles
+        are common year round, particularly during salmon runs.","date_created":null,"children":[],"activities":[{"name":"Tahsish-Kwois
+        Provincial Park","unique_id":"3-9957","place_id":20530,"activity_type_id":6,"activity_type_name":"camping","url":"http://www.tripleblaze.com/trail.php?c=2&i=9957","attribs":{"\"length\"":"\"3\""},"description":"There
+        are no designated campsites at this park, however random wilderness camping
+        is allowed. No facilities are provided. Please practice &quot;Leave No Trace&quot;
+        camping ethics.  Tahsish-Kwois Provincial Park is open year-round; there is
+        no fee for winter camping.","length":3.0,"activity_type":{"created_at":"2012-08-15T17:31:31Z","id":6,"name":"camping","updated_at":"2012-08-15T17:31:31Z"},"thumbnail":null,"rank":null,"rating":0.0}]},{"city":"Terrace","state":"British
+        Columbia","country":"Canada","name":"Hai Lake - Mount Herman Provincial Park","parent_id":null,"unique_id":20156,"directions":"Hai
+        Lake - Mount Herman park is located about 15 km south of Terrace on the west
+        side of Beam Station Road. Terrace is the closest community to this park and
+        access into this park is by roads and trails.","lat":54.407049,"lon":-128.593268,"description":"Hai
+        Lake - Mt. Herman Provincial Park protects regionally significant and remnant
+        old-growth forest and bog ecosystems. It also provides local day hiking, camping,
+        fishing and hunting opportunities.","date_created":null,"children":[],"activities":[{"name":"Hai
+        Lake - Mount Herman Provincial Park","unique_id":"2-6721","place_id":20156,"activity_type_id":2,"activity_type_name":"hiking","url":"http://www.tripleblaze.com/trail.php?c=3&i=6721","attribs":{"\"length\"":"\"0\""},"description":"For
+        your own safety and the preservation of the park, obey posted signs and keep
+        to designated trails. Shortcutting trails destroys plant life and soil structure.","length":0.0,"activity_type":{"created_at":"2012-08-15T16:12:21Z","id":2,"name":"hiking","updated_at":"2012-08-15T16:12:21Z"},"thumbnail":null,"rank":null,"rating":0.0},{"name":"Hai
+        Lake - Mount Herman Provincial Park","unique_id":"3-9819","place_id":20156,"activity_type_id":6,"activity_type_name":"camping","url":"http://www.tripleblaze.com/trail.php?c=2&i=9819","attribs":{"\"length\"":"\"3\""},"description":"Wilderness,
+        backcountry or walk-in camping is allowed. There are two basic campsites at
+        Hai Lake with 2 picnic tables, 2 fire rings, a pit toilet and a lake dock
+        (2m x 4m).  Winter camping is available at Hai Lake, but be prepared to hike
+        or snowshoe in because the access road is not ploughed during winter.","length":3.0,"activity_type":{"created_at":"2012-08-15T17:31:31Z","id":6,"name":"camping","updated_at":"2012-08-15T17:31:31Z"},"thumbnail":null,"rank":null,"rating":0.0}]},{"city":"Harrison
+        Hot Springs","state":"British Columbia","country":"Canada","name":"Sasquatch
+        Provincial Park","parent_id":null,"unique_id":20447,"directions":"Sasquatch
+        Park is located off of Highway 7, six kilometres north of Harrison Hot Springs.
+        Follow the signs through Harrison Hot Springs and Green Point.","lat":49.339241,"lon":-121.744024,"description":"Located
+        north of Harrison Hot Springs, Sasquatch Provincial Park is characterized
+        by a series of pocket lakes, a unique second-growth and birch forest, and
+        scenic mountain ridges. Hicks and Deer Lakes are ideal for motor-boating and
+        canoeing while Trout Lake provides a tranquil fishing experience. Visitors
+        can also enjoy camping, hiking, wildlife viewing, and picnicking.","date_created":null,"children":[],"activities":[{"name":"Sasquatch
+        Provincial Park","unique_id":"2-6437","place_id":20447,"activity_type_id":2,"activity_type_name":"hiking","url":"http://www.tripleblaze.com/trail.php?c=3&i=6437","attribs":{"\"length\"":"\"12\""},"description":"Sasquatch
+        Park has two easy hiking trails and one interpretive trail. The Hicks Lake
+        Trail is approximately 4 km return with an estimated time of 1 1/2 hours.
+        The Deer Lake Trail, which does not go all around the lake, is approximately
+        2 km return. The Beaver Pond Interpretive Trail is approximately a 500 metre
+        loop.","length":12.0,"activity_type":{"created_at":"2012-08-15T16:12:21Z","id":2,"name":"hiking","updated_at":"2012-08-15T16:12:21Z"},"thumbnail":null,"rank":null,"rating":0.0},{"name":"Sasquatch
+        Provincial Park","unique_id":"3-9624","place_id":20447,"activity_type_id":6,"activity_type_name":"camping","url":"http://www.tripleblaze.com/trail.php?c=2&i=9624","attribs":{"\"length\"":"\"3\""},"description":"There
+        are three campgrounds at this park - Hicks Lake campground, Bench campground
+        and Lakeside (Deer Lake) campground. There are no pull-through or double sites
+        available. Campsites have tent pads and located amongst the trees. Lakeside
+        Campground on Deer Lake is open for the winter from October 15 to March 27,
+        no fees are charged and no services are provided.","length":3.0,"activity_type":{"created_at":"2012-08-15T17:31:31Z","id":6,"name":"camping","updated_at":"2012-08-15T17:31:31Z"},"thumbnail":null,"rank":null,"rating":0.0}]},{"city":"Kelsey
+        Bay","state":"British Columbia","country":"Canada","name":"Rock Bay Marine
+        Provincial Park","parent_id":null,"unique_id":20429,"directions":"The park
+        is a rocky headland and two adjacent bays on the east coast of Vancouver Island,
+        approximately 40 km northwest of Campbell River at the junction of Discovery
+        Passage and Johnstone Strait. The park is accessible by land or water. A logging
+        road connects the park to Hwy 19. The closest communities are Kelsey Bay,
+        Sayward, Campbell River and Quadra Island. Boaters can reference marine chart
+        # 3539 and #3543 for more information on this area.","lat":50.326755,"lon":-125.453491,"description":"Rock
+        Bay Marine Provincial Park, located northwest of Campbell River on Vancouver
+        Island at the junction of Discovery Passage and Johnstone Strait, consists
+        of foreshore only. All land-based operations near the park are private.","date_created":null,"children":[],"activities":[]},{"city":"Kelowna","state":"British
+        Columbia","country":"Canada","name":"Sour Cherry Orchard","parent_id":null,"unique_id":26735,"directions":"Bear
+        Creek Road","lat":49.92077,"lon":-119.53998,"description":null,"date_created":null,"children":[],"activities":[{"name":"Sour
+        Cherry Orchard","unique_id":"1-8962","place_id":26735,"activity_type_id":5,"activity_type_name":"mountain
+        biking","url":"http://www.singletracks.com/item.php?c=1&i=8962","attribs":{"\"length\"":"\"5\"","\"nightride\"":"null"},"description":"Combination
+        of single and double track with a variety or rolling trails, not much climbing.","length":5.0,"activity_type":{"created_at":"2012-08-15T16:12:35Z","id":5,"name":"mountain
+        biking","updated_at":"2012-08-15T16:12:35Z"},"thumbnail":"http://images.singletracks.com/2014/08/IMG_0188.jpg","rank":null,"rating":0.0}]},{"city":"Powell
+        River","state":"British Columbia","country":"Canada","name":"Inland Lake","parent_id":null,"unique_id":20186,"directions":"49.959172,
+        -124.472466","lat":49.949782,"lon":-124.48272,"description":"This area was
+        established as a provincial park in 1997, prior to that it was a Forest Service
+        Recreation area. Located just a little north of Vancouver on Powell Lake and
+        Inland Lake, this park offers great recreation opportunities as well as beautiful
+        views. Hiking, biking, fishing, canoeing, and hunting are all popular activities
+        within the park.","date_created":null,"children":[],"activities":[{"name":"Inland
+        Lake","unique_id":"2-6803","place_id":20186,"activity_type_id":2,"activity_type_name":"hiking","url":"http://www.tripleblaze.com/trail.php?c=3&i=6803","attribs":{"\"length\"":"\"0\""},"description":"This
+        area was established as a provincial park in 1997, prior to that it was a
+        Forest Service Recreation area. Located just a little north of Vancouver on
+        Powell Lake and Inland Lake, this park offers great recreation opportunities
+        as well as beautiful views. There is one 13km trail that runs along the lake
+        and offers many access points to the lake. The trail surface consists mainly
+        of crushed limestone and some elevated board walks and bridges.","length":0.0,"activity_type":{"created_at":"2012-08-15T16:12:21Z","id":2,"name":"hiking","updated_at":"2012-08-15T16:12:21Z"},"thumbnail":null,"rank":null,"rating":0.0},{"name":"Inland
+        Lake","unique_id":"3-9880","place_id":20186,"activity_type_id":6,"activity_type_name":"camping","url":"http://www.tripleblaze.com/trail.php?c=2&i=9880","attribs":{"\"length\"":"\"3\""},"description":"This
+        area was established as a provincial park in 1997, prior to that it was a
+        Forest Service Recreation area. Located just a little north of Vancouver on
+        Powell Lake and Inland Lake, this park offers great recreation opportunities
+        as well as beautiful views. <br /><br />There are 22 vehicle accessible campsites
+        available on a first-come, first-served basis. There are also 3 walk-in campsites
+        available, but there are no facilities provided.","length":3.0,"activity_type":{"created_at":"2012-08-15T17:31:31Z","id":6,"name":"camping","updated_at":"2012-08-15T17:31:31Z"},"thumbnail":null,"rank":null,"rating":0.0}]},{"city":"Nanaimo","state":"British
+        Columbia","country":"Canada","name":"Morden Colliery Historic Provincial Park","parent_id":null,"unique_id":20305,"directions":"Morden
+        Colliery Historic Provincial Park is located 7 km south of Nanaimo on southern
+        Vancouver Island. Access to the park is off Hwy 1 on Morden Road. The parking
+        lot for Morden Colliery is also used as the trailhead for the regional district.","lat":49.09369,"lon":-123.883621,"description":"Morden
+        Colliery Historic Provincial Park protects features of Vancouver Island''s
+        rich coal mining history. This small, undeveloped day-use park contains the
+        only remaining coal tipple on the Island. This concrete tipple was built in
+        the early 1900s by the Pacific Coal Company, and was the first of its kind
+        in the region. The tipple is all that remains of the Morden Coal Mine, which
+        once thrived here. The first sod was turned at this mine in 1912; in its first
+        year of operation the mine produced 76,000 tonnes of coal.","date_created":null,"children":[],"activities":[{"name":"Morden
+        Colliery Historic Provincial Park","unique_id":"2-6270","place_id":20305,"activity_type_id":2,"activity_type_name":"hiking","url":"http://www.tripleblaze.com/trail.php?c=3&i=6270","attribs":{"\"length\"":"\"0\""},"description":"There
+        are no developed trails within Morden Colliery Historic Park, however the
+        Regional District of Nanaimo maintains a trail that runs through the park
+        to the Nanaimo River. For your own safety and the preservation of the park,
+        obey posted signs and keep to designated trails. Shortcutting trails destroys
+        plant life and soil structure.","length":0.0,"activity_type":{"created_at":"2012-08-15T16:12:21Z","id":2,"name":"hiking","updated_at":"2012-08-15T16:12:21Z"},"thumbnail":null,"rank":null,"rating":0.0}]},{"city":"Dease
+        Lake","state":"British Columbia","country":"Canada","name":"Ningunsaw Provincial
+        Park","parent_id":null,"unique_id":20348,"directions":"Ningunsaw Park lies
+        directly west of Highway 37, 120 km north of Meziadin Junction and 215 km
+        south of Dease Lake.","lat":56.877952,"lon":-130.034008,"description":"Ningunsaw
+        Park covers low elevation forested slopes, riparian areas and lake-headed
+        rivers which, along with adjacent Ningunsaw Ecological Reserve, protects a
+        complete elevational sequence of ecosystems from the Ningunsaw River valley
+        to alpine. Backcountry recreation, such as skiing, is available. Travelers
+        on Highway 37 may see grizzly bears, as high value habitat is found in the
+        park.","date_created":null,"children":[],"activities":[]},{"city":"Scotch
+        Creek","state":"British Columbia","country":"Canada","name":"Pukeashun Provincial
+        Park","parent_id":null,"unique_id":20407,"directions":"Pukeashun is located
+        30 kilometres from Scotch Creek and 93 kilometres from Kamloops.  Access to
+        this park can be gained by traveling approximately 40 kilometres up Road 670
+        off the Squilax/Anglemont highway. Access is seasonal.","lat":51.188745,"lon":-119.13261,"description":"Pukeashun
+        Provincial Park protects forested slopes, rolling alpine and sub alpine areas
+        in the Shuswap Uplands area. Opportunities in this park include hiking, wilderness
+        camping, wildlife viewing and hunting.","date_created":null,"children":[],"activities":[{"name":"Pukeashun
+        Provincial Park","unique_id":"2-7525","place_id":20407,"activity_type_id":2,"activity_type_name":"hiking","url":"http://www.tripleblaze.com/trail.php?c=3&i=7525","attribs":{"\"length\"":"\"0\""},"description":"For
+        your own safety and the preservation of the park, obey posted signs and keep
+        to designated trails. Shortcutting trails destroys plant life and soil structure.","length":0.0,"activity_type":{"created_at":"2012-08-15T16:12:21Z","id":2,"name":"hiking","updated_at":"2012-08-15T16:12:21Z"},"thumbnail":null,"rank":null,"rating":0.0},{"name":"Pukeashun
+        Provincial Park","unique_id":"3-10266","place_id":20407,"activity_type_id":6,"activity_type_name":"camping","url":"http://www.tripleblaze.com/trail.php?c=2&i=10266","attribs":{"\"length\"":"\"3\""},"description":"Wilderness,
+        backcountry or walk-in camping is allowed, but no facilities are provided.","length":3.0,"activity_type":{"created_at":"2012-08-15T17:31:31Z","id":6,"name":"camping","updated_at":"2012-08-15T17:31:31Z"},"thumbnail":null,"rank":null,"rating":0.0}]},{"city":"Hedley","state":"British
+        Columbia","country":"Canada","name":"Stemwinder Provincial Park","parent_id":null,"unique_id":20505,"directions":"About
+        35 km east of Princeton on Hwy #3, near Hedley.","lat":49.36997,"lon":-120.134028,"description":"A
+        small pine-dotted camping area by the Similkameen River - this park is a popular
+        choice for a relaxing picnic. Anglers like to try their luck from the rock-covered
+        shoreline. Be aware that the river runs fast and excellent swimming skills
+        are required. Also, keep your eyes open for poison ivy along the riverbank.","date_created":null,"children":[],"activities":[{"name":"Stemwinder
+        Provincial Park","unique_id":"3-9783","place_id":20505,"activity_type_id":6,"activity_type_name":"camping","url":"http://www.tripleblaze.com/trail.php?c=2&i=9783","attribs":{"\"length\"":"\"3\""},"description":"This
+        park offers 26 vehicle accessible campsites, including one pull-through site.
+        Campsite reservations are accepted and first-come, first-served sites are
+        available. The campground is open year round but only maintained from April
+        17 - September 29. The small sites are located on two levels overlooking the
+        Similkameen River amidst mature Douglas fir and Ponderosa pine trees that
+        shade most of the sites. The sites on the upper level are more open, those
+        closer to the river more treed. Campers can self-register if there are no
+        staff present by depositing their fee in the self-registration vault beside
+        the information shelter at the entrance to the park. There is no phone in
+        the park. Hedley is the closest store and Princeton has the nearest hospital,
+        fire, ambulance and police services.","length":3.0,"activity_type":{"created_at":"2012-08-15T17:31:31Z","id":6,"name":"camping","updated_at":"2012-08-15T17:31:31Z"},"thumbnail":null,"rank":null,"rating":0.0}]},{"city":"Keats
+        Island","state":"British Columbia","country":"Canada","name":"Plumper Cove
+        Marine Provincial Park","parent_id":null,"unique_id":20390,"directions":"Located
+        on the western shore of Keats Island, across the Shoal Channel from Gibsons.
+        There are many floats and mooring buoys along with lots of room for anchorage.","lat":49.408633,"lon":-123.463625,"description":"A
+        snug anchorage on the northwest side of Keats Island. Accessible by passenger
+        ferry from Langdale to Keats Landing and a 2 km walk to the park. A developed
+        area with forested walk-in campsites, fire rings, water and a trail system.
+        Marine facilities include a wharf and mooring buoys; small boats may be pulled
+        up on the shore. The pebble beach is great for swimming and picnicking. Observatory
+        Point provides views of Howe Sound and the town of Gibsons.","date_created":null,"children":[],"activities":[{"name":"Plumper
+        Cove Marine Provincial Park","unique_id":"2-7006","place_id":20390,"activity_type_id":2,"activity_type_name":"hiking","url":"http://www.tripleblaze.com/trail.php?c=3&i=7006","attribs":{"\"length\"":"\"3\""},"description":"There
+        is a 3 kilometre trail that leads to the Keats Landing foot ferry terminal
+        and a one kilometre loop trail around the park. For your own safety and the
+        preservation of the park, obey posted signs and keep to designated trails.
+        Shortcutting trails destroys plant life and soil structure.","length":3.0,"activity_type":{"created_at":"2012-08-15T16:12:21Z","id":2,"name":"hiking","updated_at":"2012-08-15T16:12:21Z"},"thumbnail":null,"rank":null,"rating":0.0},{"name":"Plumper
+        Cove Marine Provincial Park","unique_id":"3-9999","place_id":20390,"activity_type_id":6,"activity_type_name":"camping","url":"http://www.tripleblaze.com/trail.php?c=2&i=9999","attribs":{"\"length\"":"\"3\""},"description":"The
+        campsites are marine access only. There are 20 packed dirt and gravel campsites.
+        Facilites include four (4) pit toilets and a drinking water handpump. Park
+        visitors may access these sites by ferry and hiking in. The island is serviced
+        by BC Ferries from the Langdale terminal to Keat''s Landing. From the wharf
+        at Keat''s Landing, follow the gravel road past Keat''s Camp towards Eastbourne
+        until you reach an older BC Hydro buiding.  Winter camping is permitted in
+        this park, but campsites have limited services. Water handpump is not available
+        in winter months (mid september to mid may) so bring your own water.","length":3.0,"activity_type":{"created_at":"2012-08-15T17:31:31Z","id":6,"name":"camping","updated_at":"2012-08-15T17:31:31Z"},"thumbnail":null,"rank":null,"rating":0.0}]},{"city":"Nanaimo","state":"British
+        Columbia","country":"Canada","name":"Roberts Memorial Provincial Park","parent_id":null,"unique_id":20427,"directions":"Roberts
+        Memorial Park is located 15 km south of Nanaimo on central Vancouver Island.
+        From Hwy 1 take the Cedar Road exit, then turn on Yellowpoint Road. Follow
+        signs to the park.","lat":49.061668,"lon":-123.778744,"description":"Peaceful
+        Roberts Memorial Provincial Park near Nanaimo on south Vancouver Island offers
+        a small day-use area on the beach overlooking scenic Stewart Channel - an
+        ideal spot for a quiet afternoon picnic. An easy 1-kilometer trail through
+        mature forest leads to the rocky beach, which offers good opportunities for
+        wildlife viewing. From here, visitors can often see Steller''s and California
+        sea lions, who haul out to bask in the sun on the park''s unique sandstone
+        ledges during the summer months. Great Blue herons, Bald eagles and a variety
+        of seabirds can also be spotted in the park, which was donated to the province
+        by May Vaughan Roberts in memory of her husband and daughter.","date_created":null,"children":[],"activities":[{"name":"Roberts
+        Memorial Provincial Park","unique_id":"2-7015","place_id":20427,"activity_type_id":2,"activity_type_name":"hiking","url":"http://www.tripleblaze.com/trail.php?c=3&i=7015","attribs":{"\"length\"":"\"1\""},"description":"An
+        easy 1 km trail from the parking lot leads to a small picnic area on the beach
+        overlooking scenic Stewart Channel. This trail travels through second-growth
+        Douglas fir. For your own safety and the preservation of the park, obey posted
+        signs and keep to designated trails. Shortcutting trails destroys plant life
+        and soil structure.","length":1.0,"activity_type":{"created_at":"2012-08-15T16:12:21Z","id":2,"name":"hiking","updated_at":"2012-08-15T16:12:21Z"},"thumbnail":null,"rank":null,"rating":0.0}]},{"city":"Burns
+        Lake","state":"British Columbia","country":"Canada","name":"Tweedsmuir North
+        Park and Protected Area","parent_id":null,"unique_id":20561,"directions":"Tweedsmuir
+        North Provincial Park is approximately 480 kilometres by air northwest of
+        Vancouver. The park is bounded on the north and southwest by the Coast Mountains
+        and on the east by the Nechako Plateau. The park is south of Highway #16,
+        approximately 90 to 100 kilometres, between Burns Lake and Houston.","lat":53.411875,"lon":-126.568109,"description":"Tweedsmuir
+        Provincial Park appeals primarily to outdoor recreationists interested in
+        boating, angling, camping, hiking or hunting in one of North America''s most
+        magnificent wilderness areas. Outdoor recreation opportunities are almost
+        unlimited, but those who are not prepared to be completely self-sufficient
+        or who do not wish to employ a professional guide should not contemplate a
+        visit.","date_created":null,"children":[],"activities":[{"name":"Tweedsmuir
+        North Park and Protected Area","unique_id":"2-7267","place_id":20561,"activity_type_id":2,"activity_type_name":"hiking","url":"http://www.tripleblaze.com/trail.php?c=3&i=7267","attribs":{"\"length\"":"\"0\""},"description":"Hiking
+        trails lead to smaller lakes and the high country. For your own safety and
+        the preservation of the park, obey posted signs and keep to designated trails.
+        Shortcutting trails destroys plant life and soil structure. Routes in the
+        northeast section of the park lead to guide camps. They are not maintained
+        by BC Parks. Anyone planning to travel these routes or in the backcountry
+        should carry a compass and topographic maps at a scale of 1:50,000. Please
+        note that All Terrain Vehicles are not allowed in the park. National Topographic
+        Series Maps (scale 1:50,000) Sheets 93E/1/2/3/6/7/8/9 and 10 cover Tweedsmuir
+        North. These maps should be available at most map retailers in BC.","length":0.0,"activity_type":{"created_at":"2012-08-15T16:12:21Z","id":2,"name":"hiking","updated_at":"2012-08-15T16:12:21Z"},"thumbnail":null,"rank":null,"rating":0.0},{"name":"Tweedsmuir
+        North Park and Protected Area","unique_id":"3-10151","place_id":20561,"activity_type_id":6,"activity_type_name":"camping","url":"http://www.tripleblaze.com/trail.php?c=2&i=10151","attribs":{"\"length\"":"\"3\""},"description":"Wilderness
+        camping areas are located at various sites along the shores of Eutsuk and
+        Pondosy Lakes. These areas provide sheltered anchorages, tent sites, pit toilets
+        and fire rings, and are identified by orange markers. Please use these designated
+        sites. No reservations are taken.  There is a backcountry cabin available
+        to the public. It is located on Fenton Lake and is used on a first come first
+        serve basis. The following private organizations also provide accommodation
+        within this park:","length":3.0,"activity_type":{"created_at":"2012-08-15T17:31:31Z","id":6,"name":"camping","updated_at":"2012-08-15T17:31:31Z"},"thumbnail":null,"rank":null,"rating":0.0}]},{"city":"Kitimat","state":"British
+        Columbia","country":"Canada","name":"Alty Conservancy","parent_id":null,"unique_id":19869,"directions":"Alty
+        Conservancy is only accessible by boat, floatplane or helicopter and is located
+        about 10 km north of Hartley Bay and 70 km south of Kitimat. The conservancy
+        is located at the end of Kiskosh Inlet and is bordered to the southwest with
+        K''Mooda/Lowe-Gamble Conservancy, to the northeast with K''waal Conservancy
+        and to the west with Klewnugget Conservancy.","lat":53.627738,"lon":-129.372767,"description":"Alty
+        Conservancy protects Kiskosh Lagoon and Alty Lake - an area of high value
+        for grizzly bear and bird habitat. This conservancy borders with K''Mooda/Lowe-Gamble
+        Conservancy, K''waal Conservancy and Klewnugget Conservancy which together
+        protects a network of inland lakes. Alty Conservancy contains three remote
+        pristine lakes, old-growth forests, several streams and wetlands. It has a
+        diversity of wildlife habitats along with mountain scenery. Access into this
+        wilderness area can be difficult and usually requires air transportation.","date_created":null,"children":[],"activities":[{"name":"Alty
+        Conservancy","unique_id":"3-9170","place_id":19869,"activity_type_id":6,"activity_type_name":"camping","url":"http://www.tripleblaze.com/trail.php?c=2&i=9170","attribs":{"\"length\"":"\"3\""},"description":"Wilderness,
+        backcountry or walk-in camping is allowed, but no facilities are provided.
+        All sites are on a first-come, first-served basis.","length":3.0,"activity_type":{"created_at":"2012-08-15T17:31:31Z","id":6,"name":"camping","updated_at":"2012-08-15T17:31:31Z"},"thumbnail":null,"rank":null,"rating":0.0}]}]}'
+    http_version: 
+  recorded_at: Wed, 13 Apr 2016 12:54:24 GMT
+recorded_with: VCR 3.0.1

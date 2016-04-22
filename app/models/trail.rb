@@ -29,16 +29,16 @@ class Trail < ActiveRecord::Base
                                       lon:        trail_json[:lon]
                                       )
 
-      is_new_record = trail_to_update.new_record?
-      begin
-        self.transaction do
-          if trail_to_update.save!
-            Rails.logger.info "#{Time.now}: #{is_new_record ? 'NEW' : 'UPDATED' } TRAIL - id: #{trail_to_update.id}"  
-            Activity.update_or_create_activities_from_json(trail_json[:activities], trail_to_update) unless trail_json[:activities].empty?
-          end
+    is_new_record = trail_to_update.new_record?
+    begin
+      self.transaction do
+        if trail_to_update.save!
+          Rails.logger.info "#{Time.now}: #{is_new_record ? 'NEW' : 'UPDATED' } TRAIL - id: #{trail_to_update.id}"  
+          Activity.update_or_create_activities_from_json(trail_json[:activities], trail_to_update) unless trail_json[:activities].empty?
         end
-      rescue
-        Rails.logger.warn "#{Time.now}: FAILED TO CREATE/UPDATE TRAIL - unique_id: #{trail_json[:unique_id]}"
       end
+    rescue
+      Rails.logger.warn "#{Time.now}: FAILED TO CREATE/UPDATE TRAIL - unique_id: #{trail_json[:unique_id]}"
+    end
   end
 end
