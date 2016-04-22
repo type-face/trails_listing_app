@@ -1,3 +1,5 @@
 == README
 
 Trail listing demo app using trailapi: https://market.mashape.com/trailapi/
+
+Project requirements: Retrieve data from an API, save the data in a database and display it in an index & show view. Updating data not required.
